@@ -135,6 +135,15 @@ p {
   position: relative;
 }
 
+.loading .article {
+  opacity: 0;
+}
+
+.loaded .article {
+  opacity: 1.0;
+  -webkit-transition: opacity 1s 0.5s, right 0.5s 0.5s;
+}
+
 #index .article {
   position: absolute;
   right: 20px;
