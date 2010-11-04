@@ -1,259 +1,49 @@
-body {
-  font: 12px Helvetica, Arial, sans-serif;
-  background: #F2F2F3;
-  margin: 0;
-  color: #555;
-  line-height: 1.5;
-}
-
-a {
-  color: #111;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1 {
-  width: 175px;
-  height: 30px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  top: 10px;
-}
-
-.loading h1 {
-  opacity: 0;
-}
-
-.loaded h1 {
-  opacity: 1.0;
-  -webkit-transition: opacity 1s 0.5s;
-}
-
-h1 a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 175px;
-  height: 30px;
-  background: url(../images/switzerland.png);
-  text-indent: -9999px;
-  overflow: hidden;
-}
-
-
-h2 {
-  font-size: 12px;
-  color: #D00;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: 10px 0 0 0;
-  padding: 0;
-}
-
-p {
-  margin: 0 0 10px 0;
-  padding: 0;
-}
-
-.header {
-  height: 45px;
-  font-size: 11px;
-}
-
-.header ol {
-  bottom: -50px;
-  right: 0;
-  list-style: none;
-  position: absolute;
-}
-
-.loading .header ol {
-  opacity: 0;
-  right: -20px;
-}
-
-.loaded .header ol {
-  opacity: 1.0;
-  -webkit-transition: opacity 1s 0.5s, right 0.5s 0.5s;
-}
-
-.header a span {
-  font-weight: bold;
-  color: #D00;
-}
-
-.header li {
-  float: left;
-  margin-left: 10px;
-}
-
-.header ol a {
-  position: relative;
-  display: block;
-  color: #999;
-  font-weight: normal;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-}
-
-.header ol a:hover {
-  top: 3px;
-  color: #333;
-  -webkit-transition: 0.1s;
-}
-
-.header .recent_work {
-  position: absolute;
-  right: 0;
-  top: 18px;
-  font-weight: bold;
-  color: #D00;
-  padding-left: 18px;
-  background: url(../images/cross_small_red.png) no-repeat left center;
-  text-decoration: none;
-  text-transform: uppercase;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.5s 0;
-}
-
-.recent_work:hover {
-  text-decoration: underline;
-  opacity: 1.0;
-}
-
+body                                    { font:12px Helvetica,Arial,sans-serif; background:#F2F2F3; margin:0; color:#555; line-height:1.5; }
+a                                       { color:#111; text-decoration:none; }
+a:hover                                 { text-decoration:underline; }
+h1                                      { width:175px; height:30px; position:relative; margin:0; padding:0; top:10px; }
+.loading h1                             { opacity:0; }
+.loaded h1                              { opacity:1.0; -webkit-transition:opacity 1s 0.5s; }
+h1 a                                    { position:absolute; top:0; left:0; width:175px; height:30px; background:url(../images/switzerland.png); text-indent:-9999px; overflow:hidden; }
+h2                                      { font-size:12px; color:#D00; font-weight:normal; text-transform:uppercase; margin:10px 0 0 0; padding:0; }
+p                                       { margin:0 0 10px 0; padding:0; }
+.header                                 { height:45px; font-size:11px; }
+.header ol                              { bottom:-50px; right:0; list-style:none; position:absolute; }
+.loading .header ol                     { opacity:0; right:-20px; }
+.loaded .header ol                      { opacity:1.0; -webkit-transition:opacity 1s 0.5s,right 0.5s 0.5s; }
+.header a span                          { font-weight:bold; color:#D00; }
+.header li                              { float:left; margin-left:10px; }
+.header ol a                            { position:relative; display:block; color:#999; font-weight:normal; text-decoration:none; -webkit-transition:0.5s; -moz-transition:0.5s; }
+.header ol a:hover                      { top:3px; color:#333; -webkit-transition:0.1s; }
+.header .recent_work                    { position:absolute; right:0; top:18px; font-weight:bold; color:#D00; padding-left:18px; background:url(../images/cross_small_red.png) no-repeat left center; text-decoration:none; text-transform:uppercase; opacity:0.5; -webkit-transition:opacity 0.5s 0; }
+.recent_work:hover                      { text-decoration:underline; opacity:1.0; }
 /*
-  _Main Layout
+_Main Layout
 */
-
 /* an anchor to position everything off of for the most part */
-.content {
-  position: relative;
-}
-
-.loading .article {
-  opacity: 0;
-}
-
-.loaded .article {
-  opacity: 1.0;
-  -webkit-transition: opacity 1s 0.5s, right 0.5s 0.5s;
-}
-
-#index .article {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 300px;
-}
-
-#site {
-  background: #FFF;
-  padding: 40px 0;
-}
-
-.limiter {
-  width: 980px;
-  position: relative;
-  margin: 0 auto;
-}
-
+.content                                { position:relative; }
+.loading .article                       { opacity:0; }
+.loaded .article                        { opacity:1.0; -webkit-transition:opacity 1s 0.5s,right 0.5s 0.5s; }
+#index .article                         { position:absolute; right:20px; bottom:20px; width:300px; }
+#site                                   { background:#FFF; padding:40px 0; }
+.limiter                                { width:980px; position:relative; margin:0 auto; }
 /* Home Page */
-
-#index #the_cross {
-  position: relative;
-  width: 515px;
-  height: 516px;
-  background: url(../images/cross_home.png) no-repeat;
-}
-
-#index.loading #the_cross {
-  opacity: 0;
-}
-
-#index.loaded #the_cross {
-  opacity: 1.0;
-  -webkit-transition: opacity 1s 0.5s;
-}
-
+#index #the_cross                       { position:relative; width:515px; height:516px; background:url(../images/cross_home.png) no-repeat; }
+#index.loading #the_cross               { opacity:0; }
+#index.loaded #the_cross                { opacity:1.0; -webkit-transition:opacity 1s 0.5s; }
 /*
 _Footer section
 */
-
-.footer {
-  padding: 20px 0;
-  font-size: 11px;
-  text-align: center;
-  color: #999;
-}
-
-#intro_videos {
-  background: rgba(255,0,0,0.5);
-}
-
-#intro_videos video {
-  background: #000;
-  position: absolute;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-}
-
-.loading #intro_videos {
-  opacity: 0;
-  -webkit-transform: opacity 1.0s 0.5s;
-}
-
-.loaded #intro_videos {
-  opacity: 1.0;
-  -webkit-transform: opacity 1.0s 0.5s;
-}
-
-video.ne {
-  top: 80px;
-  left: 320px;
-}
-
+.footer                                 { padding:20px 0; font-size:11px; text-align:center; color:#999; }
+#intro_videos                           { background:rgba(255,0,0,0.5); }
+#intro_videos video                     { background:#000; position:absolute; cursor:pointer; -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.7); }
+.loading #intro_videos                  { opacity:0; -webkit-transform:opacity 1.0s 0.5s; }
+.loaded #intro_videos                   { opacity:1.0; -webkit-transform:opacity 1.0s 0.5s; }
+video.ne                                { top:80px; left:320px; }
 /*
-  The Player Pane
+The Player Pane
 */
-
-#player_pane {
-  -webkit-shadow: inset 0 2px 4px rgba(0,0,0,1.0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 980px;
-  height: 400px;
-  background: rgba(0,0,0,0.9);
-}
-
-#media_pane {
-  position: absolute;
-  top: 40px;
-  bottom: 0;
-  left: 0;
-  width: 735px;
-}
-
-#player_back_button {
-  text-decoration: none;
-  display: block;
-  color: #666;
-  font-weight: bold;
-  text-shadow: 0 -1px 0 rgba(0,0,0,1.0);
-  position: absolute;
-  top: 7px;
-  left: 5px;
-  border: 15px solid #000;
-  border-width: 0 12px;
-  padding: 5px;
-  -webkit-border-image: url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch;
-}
-
-#player_back_button:hover {
-  color: #FFF;
-}
+#player_pane                            { -webkit-shadow:inset 0 2px 4px rgba(0,0,0,1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(0,0,0,0.9); }
+#media_pane                             { position:absolute; top:40px; bottom:0; left:0; width:735px; }
+#player_back_button                     { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0,0,0,1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
+#player_back_button:hover               { color:#FFF; }
