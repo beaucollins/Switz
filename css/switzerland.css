@@ -7,7 +7,7 @@ h1                                      { width:175px; height:30px; position:rel
 h1 a                                    { position:absolute; top:0; left:0; width:175px; height:30px; background:url(../images/switzerland.png); text-indent:-9999px; overflow:hidden; }
 h2                                      { font-size:12px; color:#D00; font-weight:normal; text-transform:uppercase; margin:10px 0 0 0; padding:0; }
 p                                       { margin:0 0 10px 0; padding:0; }
-.header                                 { height:45px; font-size:11px; }
+.header                                 { height:45px; font-size:11px; position:relative; z-index:10; }
 .header ol                              { bottom:-50px; right:0; list-style:none; position:absolute; }
 .loading .header ol                     { opacity:0; right:-20px; }
 .loaded .header ol                      { opacity:1.0; -webkit-transition:opacity 1s 0.5s,right 0.5s 0.5s; }
@@ -25,7 +25,7 @@ _Main Layout
 .loading .article                       { opacity:0; }
 .loaded .article                        { opacity:1.0; -webkit-transition:opacity 1s 0.5s,right 0.5s 0.5s; }
 #index .article                         { position:absolute; right:20px; bottom:20px; width:300px; }
-#site                                   { background:#FFF; padding:40px 0; min-height: 520px; min-width:980px; }
+#site                                   { background:#FFF; padding:40px 0; min-height: 520px; min-width:980px; position: relative; z-index:5; }
 .limiter                                { width:980px; position:relative; margin:0 auto; }
 /* Home Page */
 #index #the_cross                       { position:relative; width:515px; height:516px; background:url(../images/cross_home.png) no-repeat; }
@@ -49,6 +49,7 @@ The Player Pane
 #player_back_button:hover               { color:#FFF; }
 
 /* Page specific styles */
+#cross                                  { display:none; }
 body#about #site                        { background:url(../images/cross_about.png) no-repeat center -25px #FFF;}
 body#about #site_wrapper                { padding: 200px 0 0; }
 body#about .article                     { margin: 0 200px 0 375px;}
@@ -61,3 +62,6 @@ body#work_with_us #site                 { background:url(../images/cross_work_wi
 .slide_controller .links a              { font-weight:bold; color:#999; text-decoration:none; padding: 0 2px;}
 .slide_controller .links a:hover        { color:#000; }
 .slide_controller .links a.current      { color:#CB0033; }
+
+body#production #cross                  { display:block; position:absolute; bottom:-11px; background: url(../images/cross_production.png) center bottom no-repeat transparent; height: 500px; width:100%;}
+body#production .article                { position:absolute; top:145px; left:460px; width:365px; }
