@@ -25,7 +25,7 @@ _Main Layout
 .loading .article                       { opacity:0; }
 .loaded .article                        { opacity:1.0; -webkit-transition:opacity 1s 0.5s,right 0.5s 0.5s; }
 #index .article                         { position:absolute; right:20px; bottom:20px; width:300px; }
-#site                                   { background:#FFF; padding:40px 0; }
+#site                                   { background:#FFF; padding:40px 0; min-height: 520px; min-width:980px; }
 .limiter                                { width:980px; position:relative; margin:0 auto; }
 /* Home Page */
 #index #the_cross                       { position:relative; width:515px; height:516px; background:url(../images/cross_home.png) no-repeat; }
@@ -34,7 +34,7 @@ _Main Layout
 /*
 _Footer section
 */
-.footer                                 { padding:20px 0; font-size:11px; text-align:center; color:#999; }
+.footer                                 { padding:20px 0; font-size:11px; text-align:center; color:#999; background:url(../images/drop_shadow.png) repeat-x; }
 #intro_videos                           { background:rgba(255,0,0,0.5); }
 #intro_videos video                     { background:#000; position:absolute; cursor:pointer; -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.7); }
 .loading #intro_videos                  { opacity:0; -webkit-transform:opacity 1.0s 0.5s; }
@@ -47,3 +47,17 @@ The Player Pane
 #media_pane                             { position:absolute; top:40px; bottom:0; left:0; width:735px; }
 #player_back_button                     { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0,0,0,1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
 #player_back_button:hover               { color:#FFF; }
+
+/* Page specific styles */
+body#about #site                        { background:url(../images/cross_about.png) no-repeat center -25px #FFF;}
+body#about #site_wrapper                { padding: 200px 0 0; }
+body#about .article                     { margin: 0 200px 0 375px;}
+
+body#work_with_us #site                 { background:url(../images/cross_work_with_us.png) no-repeat center top #FFF; }
+#work_with_us_slides                    { position:absolute; top:185px; left:300px; width: 400px;}
+.slide_controller                       { border-top:1px solid #DDD; padding-top:5px; margin-top:5px;}
+.slide_controller strong                { color:#CB0033; font-weight:normal; text-transform:uppercase; }
+.slide_controller .links                { float:right; }
+.slide_controller .links a              { font-weight:bold; color:#999; text-decoration:none; padding: 0 2px;}
+.slide_controller .links a:hover        { color:#000; }
+.slide_controller .links a.current      { color:#CB0033; }
