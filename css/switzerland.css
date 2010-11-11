@@ -48,9 +48,14 @@ The Player Pane
 #player_back_button                     { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0,0,0,1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
 #player_back_button:hover               { color:#FFF; }
 
+#creative_navigation                    { position:absolute; top:370px; left:200px; list-style:none; margin:0; padding:0; }
+#creative_navigation li                 { float:left; margin-right:5px; }
+#creative_navigation a                  { display:block; }
+#creative_navigation a img              { display:block; }
+
 /* Page specific styles */
 #cross                                  { display:none; }
-body#about #site                        { background:url(../images/cross_about.png) no-repeat center -25px #FFF;}
+body#about #site, body#creative #site   { background:url(../images/cross_about.png) no-repeat center -25px #FFF;}
 body#about #site_wrapper                { padding: 200px 0 0; }
 body#about .article                     { margin: 0 200px 0 375px;}
 
@@ -65,3 +70,27 @@ body#work_with_us #site                 { background:url(../images/cross_work_wi
 
 body#production #cross                  { display:block; position:absolute; bottom:-11px; background: url(../images/cross_production.png) center bottom no-repeat transparent; height: 500px; width:100%;}
 body#production .article                { position:absolute; top:145px; left:460px; width:365px; }
+
+body#creative div.article               { position:absolute; top:195px; left:360px; width:490px; }
+body#business_affairs #site             { background:url(../images/cross_business_affairs.png) no-repeat center top #FFF; }
+body#business_affairs .article          { position:absolute; top:330px; left:380px; width:518px;}
+body#contact  #site                     { background:url(../images/cross_full_small.png) center center no-repeat #FFF;}
+body#contact .article                   { position:absolute; left:560px; top:175px; }
+
+#contact_list                           { list-style:none; padding:0; margin:0; }
+#contact_list strong                    { color:#333; font-weight:normal; text-transform:uppercase; }
+#contact_list dl                        { margin:0; padding:0; }
+#contact_list dl dt,
+  #contact_list dl dt a                 { color:#CB0033; }
+
+#contact_list dl dt,
+  #contact_list dl dd
+                                        { display: inline; padding: 0; margin: 0;}
+#derek_contact                          { text-align: right; position: absolute; top:150px; right: -200px; width: 400px;}
+#jay_contact                            { position:absolute; top: 200px; left:160px; width:300px;}
+
+.creative_link                          { color:#CB0033; text-transform:uppercase; font-size:10px; }
+.creative_link:hover                    { text-decoration:none; }
+.creative_link img                      { display:block; margin-bottom: 10px; }
+
+#creative_link_kathy_brooks             { position:absolute; top: 110px; left:160px; }
