@@ -83,6 +83,15 @@ body#contact .article                   { position:absolute; left:560px; top:175
 #contact_list dl dt,
   #contact_list dl dt a                 { color:#CB0033; }
 
+#profile #site  .limiter .content       { background:url(../images/cross_full_small.png) no-repeat 380px 45px #FFF; min-height: 520px; }
+#bio_photo                              { position:absolute; top:70px; left:660px;}
+#bio_thumbs                             { position:absolute; width:460px; top: 320px; left: 110px; height: 172px; overflow: hidden;}
+#bio_thumbs a.thumb                     { float:left; margin:5px;}
+#bio_thumbs a.thumb img                 { display:block; }
+#bio                                    { width:291px; left:660px; position:relative; padding-top:310px; }
+#more_bio                               { border-top:1px solid #EEE; position:relative; left:660px; width:291px; padding-top:5px; margin-top: 5px; display:block; }
+#more_bio img                           { position:absolute; right:0; top:-1px;}
+
 #contact_list dl dt,
   #contact_list dl dd
                                         { display: inline; padding: 0; margin: 0;}

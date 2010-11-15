@@ -52,7 +52,7 @@ $(document).ready(function(){
       $img.attr('src', $this.data('original'));
     });
   
-  $('#intro_videos video').click(function(e){
+  $('#intro_videos video, #bio_thumbs a.thumb').click(function(e){
     player = $.setupPlayer( { parent: $('.content').parent() });
     var contentWidth = $('.content').width();
     $('.content')
