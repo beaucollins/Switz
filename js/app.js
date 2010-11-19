@@ -101,6 +101,8 @@ $(document).ready(function(){
             left: '0',
             opacity: 1,
             height: $('.content').data('original-height') + 'px'
+          }, function(){
+            $('.content').css({height:'auto'});
           });
       });
     
