@@ -21,7 +21,7 @@ p                                       { margin:0 0 10px 0; padding:0; }
 _Main Layout
 */
 /* an anchor to position everything off of for the most part */
-.content                                { position:relative; }
+.content                                { position:relative; height:520px; min-height:520px; }
 .loading #fade                          { opacity:0; }
 .loaded #fade                           { opacity:1.0; -webkit-transition:opacity 1s 0.5s; }
 #index .article                         { position:absolute; right:20px; bottom:20px; width:300px; }
@@ -43,7 +43,7 @@ video.ne                                { top:80px; left:320px; }
 /*
 The Player Pane
 */
-#player_pane                            { -webkit-shadow:inset 0 2px 4px rgba(0,0,0,1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(0,0,0,0.9); border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; }
+#player_pane                            { -webkit-shadow:inset 0 2px 4px rgba(0,0,0,1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(0,0,0,1); border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; }
 #media_pane                             { position:absolute; top:40px; bottom:0; left:0; width:735px; }
 #player_back_button                     { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0,0,0,1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
 #player_back_button:hover               { color:#FFF; }
@@ -84,7 +84,7 @@ body#contact .article                   { position:absolute; left:560px; top:175
 #contact_list dl dt,
   #contact_list dl dt a                 { color:#CB0033; }
 
-#profile #site  .limiter                { background:url(../images/cross_full_small.png) no-repeat 380px 45px #FFF; }
+#profile #site  .content                { background:url(../images/cross_full_small.png) no-repeat 380px 45px #FFF; min-height: 500px; height:auto; }
 #bio_photo                              { position:absolute; top:70px; left:660px;}
 #bio_thumbs                             { position:absolute; width:460px; top: 320px; left: 110px; height: 172px; overflow: hidden;}
 #bio_thumbs a.thumb                     { float:left; margin:5px;}
@@ -115,3 +115,5 @@ body#contact .article                   { position:absolute; left:560px; top:175
 #player_creative a                  { float:left; display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; margin:2px; }
 #player_creative a:hover            { color:#CB0033;}
 #player_creative a img              { display:block; }
+
+#player_sidebar_padding h3:first-child { margin-top: 0;}

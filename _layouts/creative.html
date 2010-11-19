@@ -20,7 +20,7 @@
               </div><!-- bio thumbs-->
           
               <div id="bio_photo">
-                <img src="/images/creative/{{ page.creative_id }}_profile.jpg">
+                <img src="/images/creative/jim_riswold_profile.jpg">
               </div><!-- bio photo -->
           
               <div id="bio">
@@ -42,6 +42,7 @@
                     height: '115px'
                   })
                   .mouseover(function(e){
+                    $('.content').css({'height':'auto'});
                     clearTimeout(timer_id);
                     $bio.animate({
                       height: height + 'px'

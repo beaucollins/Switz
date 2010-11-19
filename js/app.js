@@ -18,7 +18,7 @@ $.fn.storeHeight = function(){
     var back_button
     if(!player){
       
-      player = $('<div id="player_pane"><a href="#" id="player_back_button">Back</a><div id="media_pane"><video src="/video/sample_large.mp4" controls /></div></div>').hide();;
+      player = $('<div id="player_pane"><a href="#" id="player_back_button">Back</a> <div id="player_content"></div></div>').hide();;
       options.parent.append(player);
       back_button = player.find('#player_back_button');
       back_button.click(function(e){
@@ -45,6 +45,9 @@ $.fn.storeHeight = function(){
       return sidebar.attr('scrollHeight') - sidebar.height();
     }
     var scrolled = 0;
+    
+    // don't need this if there ain't no overflow
+    if (scrollable_height() <= 0) { return };
     
     var mouse_x = 0;
     var mouse_y = 0;
@@ -73,7 +76,9 @@ $.fn.storeHeight = function(){
     var mouseFollower = function(e){
       e.preventDefault();
       var moved = e.screenY - mouse_y;
-      var new_top = (scrollbar.position()['top'] + moved - 5)/viewable_ratio();
+      var percent_scrolled = (scrollbar.position()['top'] + moved - 5)/(sidebar.height() - 10 - scrollbar.height());
+
+      var new_top = Math.ceil(percent_scrolled * scrollable_height());
       var t = sidebar.scrollTop();
       sidebar.scrollTop(new_top);
       if(t != sidebar.scrollTop()){
@@ -83,18 +88,21 @@ $.fn.storeHeight = function(){
     
     sidebar.scroll(function(e){
       var r = viewable_ratio();
-      var h = (sidebar.height() - 10) * r;
+      var h = (sidebar.height() * r);
       scrolled = sidebar.attr('scrollTop'), scrollable_height();
       
       scrollbar.css({
-        height: h,
-        top: (scrolled * r) + 5
+        height: h-10,
+        top: Math.ceil(scrolled * r) + 5
       })
     });
     
     sidebar.mousewheel(function(e, delta){
-      e.preventDefault();
-      sidebar.scrollTop(sidebar.scrollTop() - (delta * 2));
+      var t = sidebar.scrollTop();
+      sidebar.scrollTop(sidebar.scrollTop() - (delta * 5));
+      if(t != sidebar.scrollTop()){
+        e.preventDefault();
+      }
     });
     
     
@@ -121,8 +129,13 @@ $(document).ready(function(){
       $img.attr('src', $this.data('original'));
     });
   
-  $('#intro_videos video, #bio_thumbs a.thumb').click(function(e){
+  $('#intro_videos video, #bio_thumbs a.thumb, a.recent_work').click(function(e){
+    e.preventDefault();
+    var url = '/player.html #player_content';
     player = $.setupPlayer( { parent: $('.content').parent() });
+    player.find('#player_content').load(url, function(){
+      $.initializePlayer(player);
+    });
     var contentWidth = $('.content').width();
     $('.content')
       .storeHeight()
@@ -155,25 +168,28 @@ $(document).ready(function(){
         }
       });
       
-      player.one('back', function(){
-        player.animate({
-          left: '+' + contentWidth + 'px',
-          opacity: 0
-        },{
-          duration: 300,
-          specialEasing: {
-            opacity: 'linear',
-            left: 'easeOutCubic'
-        }}); //animate
-        $('.content')
-          .animate({
-            left: '0',
-            opacity: 1,
-            height: $('.content').data('original-height') + 'px'
-          }, function(){
-            $('.content').css({height:'auto'});
-          });
-      });
+    var outro = function(e){
+      player.animate({
+        left: '+' + contentWidth + 'px',
+        opacity: 0
+      },{
+        duration: 300,
+        specialEasing: {
+          opacity: 'linear',
+          left: 'easeOutCubic'
+      }}); //animate
+      $('.content')
+        .animate({
+          left: '0',
+          opacity: 1,
+          height: $('.content').data('original-height') + 'px'
+        });
+        
+      $(window).unbind('beforeunload', outro);
+    }
+      
+      player.one('back', outro);
+      $(window).bind('beforeunload', outro);
     
   });
   
