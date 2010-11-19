@@ -78,7 +78,7 @@ $.fn.storeHeight = function(){
       var moved = e.screenY - mouse_y;
       var percent_scrolled = (scrollbar.position()['top'] + moved - 5)/(sidebar.height() - 10 - scrollbar.height());
 
-      var new_top = Math.ceil(percent_scrolled * scrollable_height());
+      var new_top = Math.round(percent_scrolled * scrollable_height());
       var t = sidebar.scrollTop();
       sidebar.scrollTop(new_top);
       if(t != sidebar.scrollTop()){
@@ -93,7 +93,7 @@ $.fn.storeHeight = function(){
       
       scrollbar.css({
         height: h-10,
-        top: Math.ceil(scrolled * r) + 5
+        top: Math.round(scrolled * r) + 5
       })
     });
     

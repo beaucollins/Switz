@@ -40,6 +40,9 @@ _Footer section
 .loading #intro_videos                  { opacity:0; -webkit-transform:opacity 1.0s 0.5s; }
 .loaded #intro_videos                   { opacity:1.0; -webkit-transform:opacity 1.0s 0.5s; }
 video.ne                                { top:80px; left:320px; }
+video.se                                { top:320px; left:320px; }
+video.nw                                { top:80px; left:50px; }
+video.sw                                { top:320px; left:50px; }
 /*
 The Player Pane
 */
@@ -107,7 +110,7 @@ body#contact .article                   { position:absolute; left:560px; top:175
 
 #player #player_pane                    { height:550px; position:relative; }
 #player #site .limiter                  { height:550px; }
-#player_sidebar                         { position:absolute; width:326px; top:0; right:0; bottom:0; overflow:hidden; }
+#player_sidebar                         { position:absolute; width:260px; top:0; right:0; bottom:0; overflow:hidden; }
 #player_sidebar_padding                 { padding:10px; }
 #player_pane                            { color:#EEE; }
 
@@ -117,3 +120,4 @@ body#contact .article                   { position:absolute; left:560px; top:175
 #player_creative a img              { display:block; }
 
 #player_sidebar_padding h3:first-child { margin-top: 0;}
+#player_video                           { position:absolute; top:40px; }
