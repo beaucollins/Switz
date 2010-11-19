@@ -27,6 +27,7 @@ _Main Layout
 #index .article                         { position:absolute; right:20px; bottom:20px; width:300px; }
 #site                                   { background:#FFF; padding:40px 0; min-height: 520px; min-width:980px; position: relative; z-index:5; }
 .limiter                                { width:980px; position:relative; margin:0 auto; }
+#site_wrapper .limiter                  { overflow:hidden; min-height:500px; }
 /* Home Page */
 #index #the_cross                       { position:relative; width:515px; height:516px; background:url(../images/cross_home.png) no-repeat; }
 #index.loading #the_cross               { opacity:0; }
@@ -34,7 +35,7 @@ _Main Layout
 /*
 _Footer section
 */
-.footer                                 { padding:20px 0; font-size:11px; text-align:center; color:#999; background:url(../images/drop_shadow.png) repeat-x; }
+.footer                                 { padding:20px 0; font-size:11px; text-align:center; color:#999; background:url(../images/drop_shadow.png) repeat-x #F2F2F3; }
 #intro_videos                           { background:rgba(255,0,0,0.5); }
 #intro_videos video                     { background:#000; position:absolute; cursor:pointer; -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.7); }
 .loading #intro_videos                  { opacity:0; -webkit-transform:opacity 1.0s 0.5s; }
@@ -50,14 +51,15 @@ The Player Pane
 
 #creative_navigation                    { position:absolute; top:370px; left:200px; list-style:none; margin:0; padding:0; }
 #creative_navigation li                 { float:left; margin-right:5px; }
-#creative_navigation a                  { display:block; }
+#creative_navigation a                  { display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; }
+#creative_navigation a:hover            { color:#CB0033;}
 #creative_navigation a img              { display:block; }
 
 /* Page specific styles */
 #cross                                  { display:none; }
 body#about #site, body#creative #site   { background:url(../images/cross_about.png) no-repeat center -25px #FFF;}
-body#about #site_wrapper                { padding: 200px 0 0; }
-body#about .article                     { margin: 0 200px 0 375px;}
+body#about #site_wrapper                { padding: 0; }
+body#about .article                     { margin: 0 200px 0 375px; top:200px; position:relative; margin-bottom:200px; }
 
 body#work_with_us #site                 { background:url(../images/cross_work_with_us.png) no-repeat center top #FFF; }
 #work_with_us_slides                    { position:absolute; top:185px; left:300px; width: 400px;}
@@ -83,12 +85,12 @@ body#contact .article                   { position:absolute; left:560px; top:175
 #contact_list dl dt,
   #contact_list dl dt a                 { color:#CB0033; }
 
-#profile #site  .limiter .content       { background:url(../images/cross_full_small.png) no-repeat 380px 45px #FFF; min-height: 520px; }
+#profile #site  .limiter                { background:url(../images/cross_full_small.png) no-repeat 380px 45px #FFF; }
 #bio_photo                              { position:absolute; top:70px; left:660px;}
 #bio_thumbs                             { position:absolute; width:460px; top: 320px; left: 110px; height: 172px; overflow: hidden;}
 #bio_thumbs a.thumb                     { float:left; margin:5px;}
 #bio_thumbs a.thumb img                 { display:block; }
-#bio                                    { width:291px; left:660px; position:relative; padding-top:310px; }
+#bio                                    { width:291px; left:660px; position:relative; top:310px; margin-bottom:310px; }
 #more_bio                               { border-top:1px solid #EEE; position:relative; left:660px; width:291px; padding-top:5px; margin-top: 5px; display:block; }
 #more_bio img                           { position:absolute; right:0; top:-1px;}
 

@@ -8,62 +8,61 @@
     <div id="wrapper">
       {% import header.html %}
       <div id="site">
+        <div id="cross"></div>
         <div id="site_wrapper">
           <div class="limiter">
-            <div class="content">
-              <div id="bio_thumbs">
-                {% for work in page.work %}
-                  <a class="thumb" href="#"><img src="/work/{{ page.creative_id }}/{{ work.thumbnail }}" alt="{{ work.name }}"></a>
-                {% endfor %}
-              </div>
-            
-              <div id="bio_photo">
-                <img src="/images/creative/{{ page.creative_id }}_profile.jpg">
-              </div>
-            
-              <div id="bio">
-              {{ content }}
-              </div>
-              <script type="text/javascript" charset="utf-8">
-              (function($){
-                var $bio = $('#bio');
-                var min = '115px';
-                var height = $bio.height() + 20;
-                var timer_id;
-                var $more = $('<span id="more_bio"><img src="/images/more_arrow.png" alt="more" ></span>');
-                $bio.after($more);
-                $('#bio')
-                  .css({
-                    overflow:'hidden',
-                    height: '115px'
-                  })
-                  .mouseover(function(e){
-                    clearTimeout(timer_id);
-                    $bio.animate({
-                      height: height + 'px'
-                    });
-                    $more.animate({
-                      opacity: 0
-                    });
-                  })
-                  .mouseout(function(e){
-                    timer_id = setTimeout(function(){
-                      $bio.animate({
-                        height: min
-                      })
-                      $more.animate({
-                        opacity: 1
-                      })
-                    }, 200);
+            <div id="bio_thumbs">
+              {% for work in page.work %}
+                <a class="thumb" href="#"><img src="/work/{{ page.creative_id }}/{{ work.thumbnail }}" alt="{{ work.name }}"></a>
+              {% endfor %}
+            </div><!-- bio thumbs-->
+          
+            <div id="bio_photo">
+              <img src="/images/creative/{{ page.creative_id }}_profile.jpg">
+            </div><!-- bio photo -->
+          
+            <div id="bio">
+            {{ content }}
+            </div><!-- Bio -->
+            <script type="text/javascript" charset="utf-8">
+            (function($){
+              var $bio = $('#bio');
+              var min = '115px';
+              var height = $bio.height() + 20;
+              var timer_id;
+              var $more = $('<span id="more_bio"><img src="/images/more_arrow.png" alt="more" ></span>');
+              $bio.after($more);
+              $('#bio')
+                .css({
+                  overflow:'hidden',
+                  height: '115px'
+                })
+                .mouseover(function(e){
+                  clearTimeout(timer_id);
+                  $bio.animate({
+                    height: height + 'px'
                   });
-              
-              })(jQuery);
-              </script>
-            </div>
-          <div>
-        </div>
-      </div>
-    </div>
+                  $more.animate({
+                    opacity: 0
+                  });
+                })
+                .mouseout(function(e){
+                  timer_id = setTimeout(function(){
+                    $bio.animate({
+                      height: min
+                    })
+                    $more.animate({
+                      opacity: 1
+                    })
+                  }, 200);
+                });
+            
+            })(jQuery);
+            </script>
+          </div><!-- limiter -->
+        </div><!-- site wrapper -->
+      </div><!-- site -->
+    </div><!-- wrapper -->
     {% include footer.html %}
   </body>
   </html>
