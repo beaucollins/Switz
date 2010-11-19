@@ -43,7 +43,7 @@ video.ne                                { top:80px; left:320px; }
 /*
 The Player Pane
 */
-#player_pane                            { -webkit-shadow:inset 0 2px 4px rgba(0,0,0,1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(0,0,0,0.9); }
+#player_pane                            { -webkit-shadow:inset 0 2px 4px rgba(0,0,0,1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(0,0,0,0.9); border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; }
 #media_pane                             { position:absolute; top:40px; bottom:0; left:0; width:735px; }
 #player_back_button                     { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0,0,0,1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
 #player_back_button:hover               { color:#FFF; }
@@ -75,7 +75,7 @@ body#production .article                { position:absolute; top:145px; left:460
 body#creative div.article               { position:absolute; top:195px; left:360px; width:490px; }
 body#business_affairs #fade             { background:url(../images/cross_business_affairs.png) no-repeat center top #FFF; }
 body#business_affairs .article          { position:absolute; top:330px; left:380px; width:518px;}
-body#contact #fade                     { background:url(../images/cross_full_small.png) center center no-repeat #FFF;}
+body#contact #fade                      { background:url(../images/cross_full_small.png) center center no-repeat #FFF;}
 body#contact .article                   { position:absolute; left:560px; top:175px; }
 
 #contact_list                           { list-style:none; padding:0; margin:0; }
@@ -104,3 +104,14 @@ body#contact .article                   { position:absolute; left:560px; top:175
 .creative_link img                      { display:block; margin-bottom: 10px; }
 
 #creative_link_kathy_brooks             { position:absolute; top: 110px; left:160px; }
+
+#player #player_pane                    { height:550px; position:relative; }
+#player #site .limiter                  { height:550px; }
+#player_sidebar                         { position:absolute; width:326px; top:0; right:0; bottom:0; overflow:hidden; }
+#player_sidebar_padding                 { padding:10px; }
+#player_pane                            { color:#EEE; }
+
+#player_creative:after              { content:'.'; clear:both; display:block; height:0; visibility:hidden; }
+#player_creative a                  { float:left; display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; margin:2px; }
+#player_creative a:hover            { color:#CB0033;}
+#player_creative a img              { display:block; }
