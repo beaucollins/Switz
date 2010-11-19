@@ -120,4 +120,5 @@ body#contact .article                   { position:absolute; left:560px; top:175
 #player_creative a img              { display:block; }
 
 #player_sidebar_padding h3:first-child { margin-top: 0;}
+#player_sidebar h3                      { font-weight:normal; font-size:13px; text-transform:uppercase; padding:0; margin:10px 0; }
 #player_video                           { position:absolute; top:40px; }
