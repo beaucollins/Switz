@@ -18,7 +18,7 @@ $.fn.storeHeight = function(){
     var back_button
     if(!player){
       
-      player = $('<div id="player_pane"><a href="#" id="player_back_button">Back</a> <div id="player_content"></div></div>').hide();;
+      player = $('<div id="player_pane"><a href="#" id="player_back_button">Back</a> <div id="player_holder"></div></div>').hide();;
       options.parent.append(player);
       back_button = player.find('#player_back_button');
       back_button.click(function(e){
@@ -133,7 +133,7 @@ $(document).ready(function(){
     e.preventDefault();
     var url = '/player.html #player_content';
     player = $.setupPlayer( { parent: $('.content').parent() });
-    player.find('#player_content').load(url, function(){
+    player.find('#player_holder').load(url, function(){
       $.initializePlayer(player);
     });
     var contentWidth = $('.content').width();

@@ -25,10 +25,10 @@ _Main Layout
 .loading #fade                          { opacity:0; }
 .loaded #fade                           { opacity:1.0; -webkit-transition:opacity 1s 0.5s; }
 #index .article                         { position:absolute; right:20px; bottom:20px; width:300px; }
-#site                                   { background:#FFF; min-height: 520px; min-width:980px; position: relative; z-index:5; }
+#site                                   { background:#FFF; min-height: 520px; min-width:980px; position: relative; z-index:5; overflow:hidden; }
 #fade                                   { padding:40px 0; min-height:480px; }
 .limiter                                { width:980px; position:relative; margin:0 auto; }
-#site_wrapper .limiter                  { overflow:hidden; min-height:500px; }
+#site_wrapper .limiter                  { min-height:500px; }
 /* Home Page */
 #index #the_cross                       { position:relative; width:515px; height:516px; background:url(../images/cross_home.png) no-repeat; }
 /*
