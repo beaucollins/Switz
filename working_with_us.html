@@ -1,0 +1,148 @@
+---
+layout: main
+body_id: work_with_us
+---
+
+<div id="work_with_us_slides" class="article">
+  <div class="slide">
+    <h2>How do I work with Switzerland or find out more?</h2>
+    <p>Email or call <a href="mailto:jay@switzerlandwest.com">Jay</a> or
+    <a href="mailto:derek@switzerlandwest.com">Derek</a>. We’d love to hear about your project, find out what you need, or just
+    give you a&nbsp;POV.</p>
+  </div>
+  <div class="slide">
+  
+  <h2>What types of services do you offer?</h2>
+
+  <p>Switzerland offers three services that can be combined or contracted individually: <a href="/production.html">production</a>,
+  <a href="/creative.html">creative</a>, and <a href="/business_affairs.html">business&nsbp;affairs</a>. </p>
+  
+   </div>
+   <div class="slide">
+     <h2>Do you compete with ad agencies? Are you an ad agency in&nbsp;disguise?</h2>
+
+  <p>Nope. We have no desire to be agency of record for any client. We love advertising agencies since that’s where we all
+  began. We’ve seen the good, bad, and ugly in this game so agencies large and small should see us as a resource. We’ve been
+  able to make all the agencies that work with us look really good to&nbsp;clients.</p>
+  </div>
+  <div class="slide">
+  <h2>Why do you have creatives on staff if you’re not&nbsp;competitive?</h2>
+
+  <p>It’s true that our creatives are some of the best on the planet. But they play a different role here – they assist
+  agencies, clients, production companies, whoever we work with in creating or consulting on concepts; pitching; taking
+  concepts through&nbsp;production.</p>
+  </div>
+  <div class="slide">
+  <h2>What’s the difference?</h2>
+
+  <p>The only thing we ask whether you are an agency, client, or production company is that if a Switzerland idea gets
+  approved for production, our creatives see it all the way through. If the idea isn’t bought, we’ll keep it for when
+  they’re&nbsp;ready.</p>
+  </div>
+  <div class="slide">
+  <h2>Are the producers and creatives on staff?</h2>
+
+  <p>Yes and no.</p>
+  
+  <p>We have a group of core employees but we work in the same way a production company does – we scale up and down
+  according to your needs. We do exclusive deals with many of the best creatives and producers in the business. Derek and Jay
+  personally oversee every project so you’ll be in good&nbsp;hands. </p>
+  </div>
+  <div class="slide">
+  <h2>I’m an interactive agency. Can I work with you?</h2>
+
+  <p>Yes. Yes. And yes. </p>
+  </div>
+  <div class="slide">
+  <h2>So how much do you know about technology?</h2>
+
+  <p>A lot. We know tech culture very, very well and know how to speak that language. As creatives we’ve worked on Microsoft,
+  Apple, Google, HP, Sun Microsystems, T-Mobile and a host of others. As producers we’ve produced launch campaigns for Apple,
+  HP, Microsoft, Gateway, T-Mobile, RIM, among others. Steve Jobs – you may have heard of him – has world premiered our Apple
+  ads so often over the years, it’s hard to keep&nbsp;track.</p>
+  </div>
+   <div class="slide_controller"> <strong>How to work with <img src="/images/cross_red_small.png" alt="+" /></strong> </div>
+  
+  </div>
+  
+<script type="text/javascript" charset="utf-8">
+  (function($){
+    
+    var slides = $('#work_with_us_slides .slide').css({position:'relative'});
+    var controls = $('.slide_controller');
+    var max_height = 0;
+    var current_slide;
+    var links = $('<div class="links"></div>');
+    var selectSlide = function(slide){
+      var $slide = $(slide);
+      if (current_slide){
+        if (current_slide[0] == slide) return;
+        current_slide
+          .animate({
+            left:'-20px',
+            opacity: '0'
+            },
+            function(){
+              $(this).hide();
+              $slide
+                .css({
+                  left: '20px',
+                  opacity:'0'
+                })
+                .show()
+                .animate({
+                  left:'0',
+                  opacity:'1'
+                });
+            });
+      }else{
+        $slide.show();
+      }
+      current_slide = $slide;
+      $slide.trigger('slide:select');
+    }
+    var np = function(e){
+      e.preventDefault();
+      var slide;
+      if($(this).attr('href') == '#next'){
+        slide = current_slide.next('.slide');
+        if(slide.length == 0) slide = slides.first();
+      }else{
+        slide = current_slide.prev('.slide');
+        if(slide.length == 0) slide = slides.last();
+      }
+      selectSlide(slide[0]);
+    }
+    var prev = $('<a href="#prev"><img src="/images/arrow_left_small.png"></a>')
+                .appendTo(controls)
+                .css({top:'-10px', right:'15px', position:'absolute'})
+                .click(np);
+    var next = $('<a href="#next"><img src="/images/arrow_right_small.png"></a>')
+                .appendTo(controls)
+                .css({top:'-10px', right:'0', position:'absolute'})
+                .click(np);
+    
+    controls.append(links);
+    slides.each(function(index, slide){
+      var $slide = $(slide);
+      if($slide.height() > max_height) max_height = $slide.height();
+      var link = $('<a href="#">'+(index+1)+'</a>')
+                    .click(function(e){
+                      selectSlide($slide[0]);
+                    });
+      $slide.bind('slide:select', function(e){
+        e.preventDefault();
+        links.find('.current').removeClass('current');
+        link.addClass('current');
+      })
+      links.append(link);
+      
+    })
+        
+    selectSlide(slides
+      .css({height:max_height})
+      .hide()[0]);
+    
+  })(jQuery)
+</script>
+  

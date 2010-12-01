@@ -51,18 +51,16 @@ $.fn.storeHeight = function(){
     
     var mouse_x = 0;
     var mouse_y = 0;
-    
     var scrollbar = $('<div id="player_scrollbar"></div>')
                         .insertAfter(sidebar)
                         .css({
                           position:'absolute',
-                          top:'5px',
-                          right: '5px',
-                          width: '5px',
+                          top:'0',
+                          right: '-15px',
+                          width: '10px',
                           height: viewable_ratio() * sidebar.height(),
-                          background: '#FFF',
-                          opacity: 0.6,
-                          borderRadius: '2px'
+                          background: '#E62642',
+                          borderRadius: '.5em'
                         })
                         .mousedown(function(e){
                           mouse_x = e.screenX;
@@ -73,10 +71,22 @@ $.fn.storeHeight = function(){
                           })
                         });
                         
+    var track = $("<div id='player_scrollbar_track'></div>")
+                  .insertAfter(scrollbar)
+                  .css({
+                    position:'absolute',
+                    top: 0,
+                    right: '-10px',
+                    height: sidebar.height() - 0,
+                    width: '1px',
+                    background: '#E62642'
+                  });
+    console.log(track);
+                        
     var mouseFollower = function(e){
       e.preventDefault();
       var moved = e.screenY - mouse_y;
-      var percent_scrolled = (scrollbar.position()['top'] + moved - 5)/(sidebar.height() - 10 - scrollbar.height());
+      var percent_scrolled = (scrollbar.position()['top'] + moved)/(sidebar.height() - 0 - scrollbar.height());
 
       var new_top = Math.round(percent_scrolled * scrollable_height());
       var t = sidebar.scrollTop();
@@ -92,8 +102,8 @@ $.fn.storeHeight = function(){
       scrolled = sidebar.attr('scrollTop'), scrollable_height();
       
       scrollbar.css({
-        height: h-10,
-        top: Math.round(scrolled * r) + 5
+        height: h-0,
+        top: Math.round(scrolled * r)
       })
     });
     
@@ -177,7 +187,11 @@ $(document).ready(function(){
         specialEasing: {
           opacity: 'linear',
           left: 'easeOutCubic'
-      }}); //animate
+        },
+        complete:function(){
+          player.hide();
+        }
+      }); //animate
       $('.content')
         .animate({
           left: '0',
