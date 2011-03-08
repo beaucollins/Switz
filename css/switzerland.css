@@ -24,7 +24,7 @@ _Main Layout
 .content                                { position:relative; height:520px; min-height:520px; }
 .loading #fade                          { opacity:0; }
 .loaded #fade                           { opacity:1.0; -webkit-transition:opacity 1s 1s; }
-#index .article                         { position:absolute; right:20px; bottom:20px; width:300px; }
+#index .article                         { position:absolute; left:680px; bottom:20px; width:300px; }
 #site                                   { background:#FFF; min-height: 520px; min-width:980px; position: relative; z-index:5; overflow:hidden; }
 #production #site                       { overflow: visible; }
 #fade                                   { padding:40px 0; min-height:480px; }
@@ -36,7 +36,7 @@ _Main Layout
 _Footer section
 */
 .footer                                 { padding:20px 0; font-size:11px; text-align:center; color:#999; background:url(../images/drop_shadow.png) repeat-x #F2F2F3; }
-#intro_videos                           { background:rgba(255,0,0,0.5); }
+#intro_videos                           { position:absolute; top:0; left:0; width:516px; height:516px; }
 #intro_videos video                     { background:#000; position:absolute; cursor:pointer; -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.7); }
 .loading #intro_videos                  { opacity:0; -webkit-transform:opacity 1.0s 0.5s; }
 .loaded #intro_videos                   { opacity:1.0; -webkit-transform:opacity 1.0s 0.5s; }

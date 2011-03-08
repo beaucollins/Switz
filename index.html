@@ -6,11 +6,12 @@ body_id: index
   <div id="the_cross"></div>
   
   <div id="intro_videos">
-    <video class="ne" src="/video/sample.mp4" muted="true" volume="0" autoplay loop width="142" height="114"></video>
-    <video class="nw" src="/video/sample_4sec.mp4" muted="true" volume="0" autoplay loop width="142" height="114"></video>
-    <video class="se" src="/video/sample_4sec.mp4" muted="true" volume="0" autoplay loop width="142" height="114"></video>
-    <video class="sw" src="/video/sample.mp4" muted="true" volume="0" autoplay loop width="142" height="114"></video>
+    <div id="intro_video_player">
   </div>
+  
+  <script type="text/javascript" charset="utf-8">
+    swfobject.embedSWF('/images/SwitzerlandPlayer.swf', 'intro_video_player', 516, 516, '9.0.0', null, {}, {menu:'false',wmode:'transparent'});
+  </script>
   
   <div class="article">
     <h2>Welcome to Switzerland</h2>

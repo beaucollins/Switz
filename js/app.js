@@ -81,7 +81,6 @@ $.fn.storeHeight = function(){
                     width: '1px',
                     background: '#E62642'
                   });
-    console.log(track);
                         
     var mouseFollower = function(e){
       e.preventDefault();
@@ -118,29 +117,8 @@ $.fn.storeHeight = function(){
     
   }
   
-})();
-
-
-$(document).ready(function(){
   
-  $('#creative_navigation a, .creative_link')
-    .mouseover(function(e){
-      var $this = $(this);
-      var $img = $this.find('img');
-      if (!$this.data('original')) {
-        $this.data('original', $img.attr('src'));
-      };
-      var original = $this.data('original');
-      $img.attr('src', original.replace(/([\w]+).jpg/, '$1_over.jpg'))
-    })
-    .mouseout(function(){
-      var $this = $(this);
-      var $img = $this.find('img');
-      $img.attr('src', $this.data('original'));
-    });
-  
-  $('#intro_videos video, #bio_thumbs a.thumb, a.recent_work').click(function(e){
-    e.preventDefault();
+  $.slidePlayer = function(){
     var url = '/player.html #player_content';
     player = $.setupPlayer( { parent: $('.content').parent() });
     player.find('#player_holder').load(url, function(){
@@ -205,6 +183,33 @@ $(document).ready(function(){
       player.one('back', outro);
       $(window).bind('beforeunload', outro);
     
+  }
+  
+})();
+
+
+$(document).ready(function(){
+  
+  
+  $('#creative_navigation a, .creative_link')
+    .mouseover(function(e){
+      var $this = $(this);
+      var $img = $this.find('img');
+      if (!$this.data('original')) {
+        $this.data('original', $img.attr('src'));
+      };
+      var original = $this.data('original');
+      $img.attr('src', original.replace(/([\w]+).jpg/, '$1_over.jpg'))
+    })
+    .mouseout(function(){
+      var $this = $(this);
+      var $img = $this.find('img');
+      $img.attr('src', $this.data('original'));
+    });
+  
+  $('#intro_videos video, #bio_thumbs a.thumb, a.recent_work').click(function(e){
+    e.preventDefault();
+    $.slidePlayer();
   });
   
 })
