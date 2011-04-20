@@ -115,11 +115,11 @@ body_id: work_with_us
     }
     var prev = $('<a href="#prev"><img src="/images/arrow_left_small.png"></a>')
                 .appendTo(controls)
-                .css({top:'-10px', right:'15px', position:'absolute'})
+                .css({bottom:'0', right:'15px', position:'absolute'})
                 .click(np);
     var next = $('<a href="#next"><img src="/images/arrow_right_small.png"></a>')
                 .appendTo(controls)
-                .css({top:'-10px', right:'0', position:'absolute'})
+                .css({bottom:'0', right:'0', position:'absolute'})
                 .click(np);
     
     controls.append(links);
