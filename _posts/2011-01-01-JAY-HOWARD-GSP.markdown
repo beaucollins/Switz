@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/JAY HOWARD GSP.mp4
+video: http://assets.switzerlandwest.com/JAY HOWARD GSP.mp4
 ---
 JAY HOWARD GSP.mp4

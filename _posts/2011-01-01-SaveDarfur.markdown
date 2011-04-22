@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/SaveDarfur.mp4
+video: http://assets.switzerlandwest.com/SaveDarfur.mp4
 ---
 SaveDarfur.mp4

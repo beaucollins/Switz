@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/Coke_Circus640_480.mp4
+video: http://assets.switzerlandwest.com/Coke_Circus640_480.mp4
 ---
 Coke_Circus640_480.mp4

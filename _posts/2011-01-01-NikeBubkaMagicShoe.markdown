@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/NikeBubkaMagicShoe.mp4
+video: http://assets.switzerlandwest.com/NikeBubkaMagicShoe.mp4
 ---
 NikeBubkaMagicShoe.mp4

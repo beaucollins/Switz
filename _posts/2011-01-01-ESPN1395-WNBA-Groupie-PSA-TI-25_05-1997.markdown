@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/ESPN1395 WNBA Groupie PSA TI-25_05-1997.mp4
+video: http://assets.switzerlandwest.com/ESPN1395 WNBA Groupie PSA TI-25_05-1997.mp4
 ---
 ESPN1395 WNBA Groupie PSA TI-25_05-1997.mp4

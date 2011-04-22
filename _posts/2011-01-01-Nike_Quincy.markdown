@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/Nike_Quincy.mp4
+video: http://assets.switzerlandwest.com/Nike_Quincy.mp4
 ---
 Nike_Quincy.mp4

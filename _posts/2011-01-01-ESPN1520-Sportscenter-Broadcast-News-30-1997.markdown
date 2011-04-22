@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/ESPN1520 Sportscenter Broadcast News-30-1997.mp4
+video: http://assets.switzerlandwest.com/ESPN1520 Sportscenter Broadcast News-30-1997.mp4
 ---
 ESPN1520 Sportscenter Broadcast News-30-1997.mp4

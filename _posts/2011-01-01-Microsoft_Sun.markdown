@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/Microsoft_Sun.mp4
+video: http://assets.switzerlandwest.com/Microsoft_Sun.mp4
 ---
 Microsoft_Sun.mp4

@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerland.com/JobsIntelMW.mp4
+video: http://assets.switzerlandwest.com/JobsIntelMW.mp4
 ---
 JobsIntelMW.mp4
