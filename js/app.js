@@ -118,8 +118,9 @@ $.fn.storeHeight = function(){
   }
   
   
-  $.slidePlayer = function(){
-    var url = '/player.html #player_content';
+  $.slidePlayer = function(url){
+    if (!url) { url = "/player.html" };
+    url = url + ' #player_content';
     player = $.setupPlayer( { parent: $('.content').parent() });
     player.find('#player_holder').load(url, function(){
       $.initializePlayer(player);
@@ -209,7 +210,7 @@ $(document).ready(function(){
   
   $('#intro_videos video, #bio_thumbs a.thumb, a.recent_work').click(function(e){
     e.preventDefault();
-    $.slidePlayer();
+    $.slidePlayer($(this).attr('href'));
   });
   
 })

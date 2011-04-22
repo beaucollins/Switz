@@ -47,7 +47,7 @@ video.sw                                { top:320px; left:50px; }
 /*
 The Player Pane
 */
-#player_pane                            { -webkit-shadow:inset 0 2px 4px rgba(0,0,0,1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(51,51,51,1); border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; }
+#player_pane                            { -webkit-shadow:inset 0 2px 4px rgba(0,0,0,1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(51,51,51,1); border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; min-height:521px; }
 #media_pane                             { position:absolute; top:40px; bottom:0; left:0; width:735px; }
 #player_back_button                     { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0,0,0,1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
 #player_back_button:hover               { color:#FFF; }
@@ -90,12 +90,13 @@ body#contact .article                   { position:absolute; left:560px; top:175
 #contact_list dl dt,
   #contact_list dl dt a                 { color:#CB0033; }
 
-#profile #site  .content                { background:url(../images/cross_full_small.png) no-repeat 380px 45px #FFF; min-height: 500px; height:auto; }
-#bio_photo                              { position:absolute; top:70px; left:660px;}
+#profile #site  .content                { background:url(../images/cross_full_small.png) no-repeat center center #FFF; min-height: 500px; height:auto; }
+#bio_photo                              { position:absolute; top:212px; left:715px;}
+#bio_photo img                          { height:76px; display:block;}
 #bio_thumbs                             { position:absolute; width:460px; top: 320px; left: 110px; height: 172px; overflow: hidden;}
 #bio_thumbs a.thumb                     { float:left; margin:5px;}
 #bio_thumbs a.thumb img                 { display:block; }
-#bio                                    { width:291px; left:660px; position:relative; top:310px; margin-bottom:180px; }
+#bio                                    { width:450px; left:550px; top:300px; position:absolute; }
 #more_bio                               { border-top:1px solid #EEE; position:relative; left:660px; width:291px; padding-top:5px; margin-top: 5px; display:block; }
 #more_bio img                           { position:absolute; right:0; top:-1px;}
 
