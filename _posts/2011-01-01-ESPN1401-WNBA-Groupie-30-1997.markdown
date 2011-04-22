@@ -1,0 +1,5 @@
+---
+layout: video
+video: http://assets.switzerland.com/ESPN1401 WNBA Groupie-30-1997.mp4
+---
+ESPN1401 WNBA Groupie-30-1997.mp4

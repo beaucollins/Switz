@@ -1,14 +1,26 @@
 ---
-layout: main
 body_id: creative
 title: Creative
+layout: default
 ---
 <div class="article">
 <h2>CREATIVE</h2>
-<p>Some of the best creatives in the business now call Switzerland home. Some of the most impactful advertising ever created
-started with these writers, art directors, designers. The work you see here has become part of the cultural landscape.
-It&rsquo;s been copied repeatedly. It&rsquo;s set precedents. It&rsquo;s made the best directors, editors, and talent want to
-work with us. It&rsquo;s sold a hell of a lot of&nbsp;product.</p>
+<p>Some of the best creatives in the business now call Switzerland home. Some of the most impactful
+advertising ever created started with these writers, art directors, designers. The work you see here
+has become part of the cultural landscape. It&rsquo;s been copied repeatedly. It&rsquo;s set
+precedents. It&rsquo;s made the best directors, editors, and talent want to work with us. It&rsquo;s
+sold a hell of a lot of&nbsp;product.</p>
 </div>
 
-{% include creative_menu.html %}
+<ul id="creative_navigation">
+  
+  {% for author in site.authors %}
+  <li>
+    <a href="{{ author.url }}">
+      <img src="/images/creative/riswold.jpg" alt="{{ author.title }}">
+      <strong>{{ author.title | linebreak_name }}</strong>
+    </a>
+  </li>
+  {% endfor %}
+  
+</ul>

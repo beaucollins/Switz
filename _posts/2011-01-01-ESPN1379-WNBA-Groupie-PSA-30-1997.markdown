@@ -1,0 +1,5 @@
+---
+layout: video
+video: http://assets.switzerland.com/ESPN1379 WNBA Groupie PSA-30-1997.mp4
+---
+ESPN1379 WNBA Groupie PSA-30-1997.mp4

@@ -1,0 +1,5 @@
+---
+layout: video
+video: http://assets.switzerland.com/SteveMW.mp4
+---
+SteveMW.mp4

@@ -100,7 +100,8 @@ module Jekyll
     
     def site_payload
       payload = site_payload_without_authors
-      payload.merge 'authors' => self.authors
+      payload['site']['authors'] = self.authors
+      payload
     end
     
   end

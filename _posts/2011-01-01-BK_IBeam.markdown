@@ -1,0 +1,5 @@
+---
+layout: video
+video: http://assets.switzerland.com/BK_IBeam.mp4
+---
+BK_IBeam.mp4

@@ -1,0 +1,5 @@
+---
+layout: video
+video: http://assets.switzerland.com/ESPN1396 WNBA Brother TI-25_05-1997.mp4
+---
+ESPN1396 WNBA Brother TI-25_05-1997.mp4

@@ -1,0 +1,5 @@
+---
+layout: video
+video: http://assets.switzerland.com/DOH_Park.mp4
+---
+DOH_Park.mp4

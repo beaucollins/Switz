@@ -1,0 +1,5 @@
+---
+layout: video
+video: http://assets.switzerland.com/QWLO4085MiniMart60.mp4
+---
+QWLO4085MiniMart60.mp4
