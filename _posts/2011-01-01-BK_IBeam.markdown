@@ -1,6 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/BK_IBeam.mp4
+published: no
+video_source: BK_IBeam.mp4
 video_home: http://assets.switzerlandwest.com/small-spots/BK_IBeam_small.mp4
 ---
 BK_IBeam.mp4

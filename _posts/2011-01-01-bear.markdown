@@ -1,0 +1,5 @@
+---
+title: Bear
+video_source: bear_compressed.f4v
+author: Derek Ruddy
+---

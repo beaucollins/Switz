@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/SteveMW.mp4
+published: no
+video_source: SteveMW.mp4
 ---
 SteveMW.mp4

@@ -1,5 +1,8 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/DOH_Park.mp4
+video_source: DOH_Park.mp4
+title: DOH Park
+author: Jay Howard
+home: yes
 ---
-DOH_Park.mp4
+

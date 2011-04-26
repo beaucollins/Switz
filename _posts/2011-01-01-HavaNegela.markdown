@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/HavaNegela.mp4
+home: yes
+video_source: HavaNegela.mp4
+author: Rick McQuiston
 ---
-HavaNegela.mp4

@@ -1,5 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Lumberjack_BK.mp4
+video_source: Lumberjack_BK.mp4
+author: Jay Howard
+title: Burger Kind Lumberjack
+home: yes
 ---
-Lumberjack_BK.mp4

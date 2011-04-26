@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/SaveDarfur.mp4
+published: no
+video_source: SaveDarfur.mp4
 ---
 SaveDarfur.mp4

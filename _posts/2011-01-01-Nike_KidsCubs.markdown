@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Nike_KidsCubs.mp4
+video_source: Nike_KidsCubs.mp4
+author: Derek Ruddy
+home: yes
 ---
-Nike_KidsCubs.mp4

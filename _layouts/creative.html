@@ -4,12 +4,18 @@ body_id: profile
 ---
               <div id="bio_thumbs">
                 {% for post in page.posts %}
-                  <a class="thumb" href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt="{{ page.title }}"></a>
+                  {% if post.video_source %}
+                  <div class="work_preview">
+                    <a class="thumb" href="{{ post.url }}" data-sample="{{ post | video_thumbnail_url }}"><img src="{{ post | video_thumbnail_image_url }}" alt="{{ post.title }}"></a>
+                  </div>
+                  {% endif %}
                 {% endfor %}
               </div><!-- bio thumbs-->
           
               <div id="bio_photo">
-                <img src="/images/creative/jim_riswold_profile.jpg">
+                <img src="/images/creative/{{ page.author_id }}.jpg">
+                <img src="/images/creative/{{ page.author_id }}-gray.jpg">
+                <img src="/images/creative/{{ page.author_id }}-gray.jpg">
               </div><!-- bio photo -->
           
               <div id="bio">

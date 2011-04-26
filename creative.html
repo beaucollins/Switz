@@ -15,12 +15,14 @@ sold a hell of a lot of&nbsp;product.</p>
 <ul id="creative_navigation">
   
   {% for author in site.authors %}
+  {% unless !author.hide %}
   <li>
     <a href="{{ author.url }}">
-      <img src="/images/creative/riswold.jpg" alt="{{ author.title }}">
+      <img src="/images/creative/{{ author.author_id }}-menu.jpg" alt="{{ author.title }}">
       <strong>{{ author.title | linebreak_name }}</strong>
     </a>
   </li>
+  {% endunless %}
   {% endfor %}
   
 </ul>

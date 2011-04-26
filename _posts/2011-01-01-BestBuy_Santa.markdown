@@ -1,6 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/BestBuy_Santa.mp4
-video_home: http://assets.switzerlandwest.com/small-spots/BestBuy_Santa_small.mp4
+video_source: BestBuy_Santa.mp4
+author: Jay Howard
+title: Best Buy Santa
+home: yes
 ---
-BestBuy_Santa.mp4

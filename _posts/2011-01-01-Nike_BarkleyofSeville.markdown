@@ -1,5 +1,8 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Nike_BarkleyofSeville.mp4
+video_source: Nike_BarkleyofSeville.mp4
+author: Derek Ruddy
+title: Nike - Barkley of Seville
+home: yes
 ---
-Nike_BarkleyofSeville.mp4
+

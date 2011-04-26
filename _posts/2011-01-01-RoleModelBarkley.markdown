@@ -1,5 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/RoleModelBarkley.mp4
+video_source: RoleModelBarkley.mp4
+author:
+  - Derek Ruddy
+  - Jim Riswold
 ---
-RoleModelBarkley.mp4

@@ -1,6 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Apple_Kids.mp4
-video_home: http://assets.switzerlandwest.com/small-spots/Apple_Kids_small.mp4
+video_source: Apple_Kids.mp4
+author: Jay Howard
+home: yes
+title: Apple Kids
 ---
-Apple_Kids.mp4

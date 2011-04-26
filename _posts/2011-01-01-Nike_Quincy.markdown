@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Nike_Quincy.mp4
+published: no
+video_source: Nike_Quincy.mp4
 ---
 Nike_Quincy.mp4

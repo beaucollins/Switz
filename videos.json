@@ -1,8 +1,8 @@
 ---
 ---
 [ {% assign comma = false %}
-  {% for video in site.posts %}{% if video.video_home %}{% if comma  %},{% else %}{% assign comma = true %}{% endif %}{
+  {% for video in site.posts %}{% if video.home %}{% if comma  %},{% else %}{% assign comma = true %}{% endif %}{
     "url": "{{ video.url }}",
-    "src": "{{ video.video_home }}"
+    "src": "{{ video | video_home_url }}"
   }
 {% endif %}{% endfor %}]

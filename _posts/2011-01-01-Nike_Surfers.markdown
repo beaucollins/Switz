@@ -1,5 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Nike_Surfers.mp4
+video_source: Nike_Surfers.mp4
+author: Rick McQuiston
+home: yes
 ---
-Nike_Surfers.mp4
+

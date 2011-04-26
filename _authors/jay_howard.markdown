@@ -1,6 +1,7 @@
 ---
 layout: creative
 name: Jay Howard
+hide: yes
 ---
 
 ## Jay Howard

@@ -1,5 +1,8 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/RedCup1spill_Starbucks.mp4
+title: Starbucks
+video_source: RedCup1spill_Starbucks.mp4
+author: Jay Howard
+home: yes
 ---
-RedCup1spill_Starbucks.mp4
+

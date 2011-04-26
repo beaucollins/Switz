@@ -11,6 +11,6 @@ Club, Best of Show, Cannes, Clio, D&amp;DA, Communication Arts, permanent displa
 the Nike Apparel Campaign for 7 consecutive years, nominated for Best Print Advertising in the
 country every time. This is SportsCenter voted one of the ten outstanding campaigns in commercial
 history. Clients include Nike, Speedo, Miller High Life, Coca-Cola, Microsoft, NFL, Sprint, Toyota,
-Virgin, Sony Pictures, ESPN, MLB and [David&nbsp;Fincher].
+Virgin, Sony Pictures, ESPN, MLB and [David&nbsp;Fincher][fincher].
 
-[DavidFincher]: #david_fincher
+[fincher]: #david_fincher

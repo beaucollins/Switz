@@ -1,5 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Coke_WorldCup.mp4
+published: no
+video_source: Coke_WorldCup.mp4
+author: Derek Ruddy
 ---
 Coke_WorldCup.mp4

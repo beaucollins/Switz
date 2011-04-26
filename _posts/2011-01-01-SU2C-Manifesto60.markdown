@@ -1,5 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/SU2C-Manifesto60.mp4
+home: yes
+video_source: SU2C-Manifesto60.mp4
+author: Rick McQuiston
 ---
-SU2C-Manifesto60.mp4
+

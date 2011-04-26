@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/PLAY_WhatIf.mp4
+home: yes
+video_source: PLAY_WhatIf.mp4
+author: Rick McQuiston
 ---
-PLAY_WhatIf.mp4

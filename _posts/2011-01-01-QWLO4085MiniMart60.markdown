@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/QWLO4085MiniMart60.mp4
+published: no
+video_source: QWLO4085MiniMart60.mp4
 ---
 QWLO4085MiniMart60.mp4

@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/SU2C-StandingUp60.mp4
+video_source: SU2C-StandingUp60.mp4
+author: Rick McQuiston
+home: yes
 ---
-SU2C-StandingUp60.mp4

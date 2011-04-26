@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Nike_AmazingGrace.mp4
+published: no
+video_source: Nike_AmazingGrace.mp4
 ---
 Nike_AmazingGrace.mp4

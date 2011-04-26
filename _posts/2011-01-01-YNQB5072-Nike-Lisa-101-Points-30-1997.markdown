@@ -1,5 +1,6 @@
 ---
 layout: video
+published: no
 video: http://assets.switzerlandwest.com/YNQB5072 Nike Lisa 101 Points-30-1997.mp4
 ---
 YNQB5072 Nike Lisa 101 Points-30-1997.mp4

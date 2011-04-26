@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/fine_print.mp4
+published: no
+video_source: fine_print.mp4
 ---
 fine_print.mp4

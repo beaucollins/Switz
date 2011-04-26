@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/FineLiving_NotHome.mp4
+published: no
+video_source: FineLiving_NotHome.mp4
 ---
 FineLiving_NotHome.mp4

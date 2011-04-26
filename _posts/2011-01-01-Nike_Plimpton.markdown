@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Nike_Plimpton.mp4
+published: no
+video_source: Nike_Plimpton.mp4
 ---
 Nike_Plimpton.mp4

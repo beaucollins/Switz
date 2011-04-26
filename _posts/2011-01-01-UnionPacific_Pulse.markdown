@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/UnionPacific_Pulse.mp4
+title: Union Pacific
+video_source: UnionPacific_Pulse.mp4
+author: Jay Howard
 ---
-UnionPacific_Pulse.mp4

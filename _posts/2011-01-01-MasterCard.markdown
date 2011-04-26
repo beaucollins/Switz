@@ -1,5 +1,8 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/MasterCard.mp4
+published: no
+video_source: MasterCard.mp4
+title: MasterCard Baseball
+author: Derek Ruddy
 ---
-MasterCard.mp4
+

@@ -1,5 +1,8 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/MiniCooper_AmusementPark.mp4
+title: Mini Amusement Park
+video_source: MiniCooper_AmusementPark.mp4
+home: yes
+author: Jay Howard
 ---
-MiniCooper_AmusementPark.mp4
+

@@ -1,5 +1,6 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/JayHoward_Sm.mp4
+published: no
+video_source: JayHoward_Sm.mp4
 ---
 JayHoward_Sm.mp4

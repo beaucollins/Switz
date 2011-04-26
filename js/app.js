@@ -214,3 +214,14 @@ $(document).ready(function(){
   });
   
 })
+
+
+jQuery(document).ready(function(){
+  jQuery('a[data-sample]').samplePlayer();
+  jQuery('body').mouseover(function(e){
+    if($(e.target).parents('.work_preview').length == 0){
+      $('a[data-sample]').hideSample();
+    }
+  })
+  
+});

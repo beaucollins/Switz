@@ -1,5 +1,7 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Mini_Facepaint.mp4
+title: Mini Facepaint
+video_source: Mini_Facepaint.mp4
+author: Jay Howard
+home: yes
 ---
-Mini_Facepaint.mp4

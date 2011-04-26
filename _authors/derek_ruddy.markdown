@@ -1,6 +1,7 @@
 ---
 layout: creative
 name: Derek Ruddy
+hide: yes
 ---
 
 ## Derek Ruddy

@@ -1,6 +1,7 @@
 ---
 layout: creative
 name: Kathy Brooks
+hide: true
 ---
 ## Kathy Brooks
 

@@ -1,5 +1,5 @@
 ---
 layout: video
-video: http://assets.switzerlandwest.com/Nike_DuelingTVs.mp4
+video_source: Nike_DuelingTVs.mp4
+author: Rick McQuiston
 ---
-Nike_DuelingTVs.mp4
