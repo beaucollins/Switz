@@ -13,6 +13,14 @@ module VideoTags
     end
   end
   
+  def video_media_path(page)
+    if source = page['video_source']
+      extension = File.extname(source)
+      basename = File.basename(source, extension)
+      "http://assets.switzerlandwest.com/videos/#{basename}/"
+    end
+  end
+  
   def video_thumbnail_image_url(page)
     if source = page['video_source']
       extension = File.extname(source)
@@ -43,6 +51,11 @@ module VideoTags
       basename = File.basename(source, extension)
       "http://assets.switzerlandwest.com/videos/#{basename}/#{basename}_small.mp4"
     end
+  end
+  
+  def comma_break(string)
+    string.gsub(/,[\s]+/,"<br/>")
+    
   end
   
   

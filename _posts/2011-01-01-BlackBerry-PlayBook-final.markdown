@@ -1,6 +1,7 @@
 ---
 layout: video
 published: no
-video: http://assets.switzerlandwest.com/BlackBerry PlayBook final.mp4
+video_source: BlackBerry PlayBook final.mp4
+home: no
 ---
 BlackBerry PlayBook final.mp4

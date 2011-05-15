@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
+published: yes
 video_source: QWLO4085MiniMart60.mp4
 ---
 QWLO4085MiniMart60.mp4

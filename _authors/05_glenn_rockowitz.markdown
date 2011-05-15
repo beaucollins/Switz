@@ -1,17 +1,13 @@
 ---
 layout: creative
 name: Glenn Rockowitz
+credit: Creative Director/Writer
 ---
 
 ## Glenn Rockowitz
 
-Writer. Comedian. Philanthropist. Self-loathing Jew. Breaker-down of walls. Stand-up comedian and
-television writer for 15 years. Survived so many cancers he now has a buy-one-get-one-free card.
-Thankfully lived to write a painfully passionate bestselling memoir about it. Fell backwards into
-advertising and has produced a wealth of iconic, award-winning work that he&rsquo;d probably rather
-not talk about. More proud of his other accomplishments: [his book], [his film], and his non-profit
-work. Will happily provide additional self-congratulatory details of his illustrious life
-upon&nbsp;request.
 
-[his book]: http://rodeoinjoliet.com
-[his film]: http://www.hacksmovie.com/new_index.html
+Bestselling Author. Former TV Writer. Comedian. Patient Advocate. Rockowitz fell backwards into advertising and has produced a good share of iconic, award-winning work that is sampled here on this site. _[Rodeo in Joliet]_ , a memoir chronicling the death of his father and his own fight back from a terminal cancer diagnosis, officially became a national bestseller in March of last year and was a finalist for _US Book News&rsquo;_ &ldquo;Best Books of 2010.&rdquo; He recently started [Change it Back], an Adolescent &amp; Young Adult cancer coalition designed to improve treatment standards for AYA patients around the country. He will happily provide additional self-congratulatory details of his life upon request. Although he doubts you even made it this far.
+
+[Rodeo in Joliet]: http://rodeoinjoliet.com/
+[Change it Back]: http://changeitback.org/

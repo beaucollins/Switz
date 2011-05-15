@@ -1,9 +1,12 @@
 ---
 layout: default
 body_id: work_with_us
+title: Work With Us
 ---
 
 <div id="work_with_us_slides" class="article">
+  <div class="slide_controller"> <strong>How to work with <img src="/images/cross_red_small.png" alt="+" /></strong> </div>
+  
   <div class="slide">
     <h2>How do I work with Switzerland or find out more?</h2>
     <p>Email or call <a href="mailto:jay@switzerlandwest.com">Jay</a> or
@@ -15,7 +18,7 @@ body_id: work_with_us
   <h2>What types of services do you offer?</h2>
 
   <p>Switzerland offers three services that can be combined or contracted individually: <a href="/production.html">production</a>,
-  <a href="/creative.html">creative</a>, and <a href="/business_affairs.html">business&nsbp;affairs</a>. </p>
+  <a href="/creative.html">creative</a>, and <a href="/business-affairs.html">business&nbsp;affairs</a>. </p>
   
    </div>
    <div class="slide">
@@ -61,14 +64,13 @@ body_id: work_with_us
   HP, Microsoft, Gateway, T-Mobile, RIM, among others. Steve Jobs – you may have heard of him – has world premiered our Apple
   ads so often over the years, it’s hard to keep&nbsp;track.</p>
   </div>
-   <div class="slide_controller"> <strong>How to work with <img src="/images/cross_red_small.png" alt="+" /></strong> </div>
   
   </div>
   
 <script type="text/javascript" charset="utf-8">
   (function($){
     
-    var slides = $('#work_with_us_slides .slide').css({position:'relative'});
+    var slides = $('#work_with_us_slides .slide').css({position:'relative', top:'50px'});
     var controls = $('.slide_controller');
     var max_height = 0;
     var current_slide;
@@ -114,13 +116,15 @@ body_id: work_with_us
       selectSlide(slide[0]);
     }
     var prev = $('<a href="#prev"><img src="/images/arrow_left_small.png"></a>')
-                .appendTo(controls)
-                .css({bottom:'0', right:'15px', position:'absolute'})
+                .appendTo(links)
+                .css({top:'0', left:'-15px', position:'absolute'})
                 .click(np);
     var next = $('<a href="#next"><img src="/images/arrow_right_small.png"></a>')
-                .appendTo(controls)
-                .css({bottom:'0', right:'0', position:'absolute'})
+                .appendTo(links)
+                .css({top:'0', right:'-15px', position:'absolute'})
                 .click(np);
+                
+    links.append("<em>click through to read more about our process</em>");
     
     controls.append(links);
     slides.each(function(index, slide){

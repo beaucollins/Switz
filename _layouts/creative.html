@@ -2,7 +2,8 @@
 layout: default
 body_id: profile
 ---
-              <div id="bio_thumbs">
+            <div class="profile">
+              <div class="work_samples">
                 {% for post in page.posts %}
                   {% if post.video_source %}
                   <div class="work_preview">
@@ -11,7 +12,7 @@ body_id: profile
                   {% endif %}
                 {% endfor %}
               </div><!-- bio thumbs-->
-          
+          </div>
               <div id="bio_photo">
                 <img src="/images/creative/{{ page.author_id }}.jpg">
                 <img src="/images/creative/{{ page.author_id }}-gray.jpg">

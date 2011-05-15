@@ -31,11 +31,12 @@ module Jekyll
         # 1) Home page
         output = StringIO.new
         file = Tempfile.new('info')
-        info  = spawn "ffmpeg -i #{input}", :err => file.path
+        info  = spawn "ffmpeg -i '#{input}'", :err => file.path
         wait
         
         match = nil
         file.each_line do |line|
+          puts line
           break if match = line.match(/video:.*?([\d]{1,}x[\d]{1,})/i)
         end
         
@@ -60,7 +61,7 @@ module Jekyll
         
         # 4) Thumbs for profile
         puts "Make poster images"
-        spawn "ffmpeg -y -loglevel quiet -i '#{input}' -r 2 -f image2 -vcodec mjpeg #{File.join(poster_directory,'poster%d.jpg')}", :out => "/dev/null", :err => "/dev/null"
+        spawn "ffmpeg -y -loglevel quiet -i '#{input}' -r 2 #{scale.fit_options('640x480', :width)} -f image2 -vcodec mjpeg #{File.join(poster_directory,'poster%d.jpg')}", :out => "/dev/null", :err => "/dev/null"
         wait
         puts "done: #{$?}"
 
@@ -71,7 +72,7 @@ module Jekyll
         
         if File.extname(input) != 'mp4'
           puts "Make full size"
-          spawn("ffmpeg -y -loglevel quiet -i '#{input}' -vcodec libx264 -b 500k #{scale.fit_options('640x480', :width)} -crf 22 -vpre slow -acodec libfaac -ab 96k -threads 0 '#{File.join(output_directory,"#{basename}.mp4")}'", :out => "/dev/null", :err => '/dev/null')
+          spawn("ffmpeg -y -loglevel quiet -i '#{input}' -vcodec libx264 -b 500k #{scale.fit_options('640x480', :none)} -crf 22 -vpre slow -acodec libfaac -ab 96k -threads 0 '#{File.join(output_directory,"#{basename}.mp4")}'", :out => "/dev/null", :err => '/dev/null')
           wait
         else
           puts "Extname: #{File.extname(input)}"
@@ -100,6 +101,7 @@ module Jekyll
     end
     
     # mode
+    # :none : don't crop or pad
     # :box : don't crop anything and add black letterboxing
     # :fill : fill the canvas with image and crop anything left over
     # :width : fit the full width and crop/pad height
@@ -116,7 +118,22 @@ module Jekyll
       new_w = w if scale_base == 'h' && w - new_w < 10
       new_h = h if scale_base == 'w' && h - new_h < 10
       
+      
       options = "-s #{new_w.to_i}x#{new_h.to_i}"
+      
+      unless mode == :none
+        if scale_base == 'w'
+          # height may need some padding
+          if new_h < h
+            padtop = ((h-new_h)/4).floor * 2
+            padbottom = ((h-new_h)/4).ceil * 2
+            options << " -padtop #{padtop} -padbottom #{padbottom}"
+          else
+            # crop it
+          end
+        else
+        end
+      end
       puts "Sizing options: #{options}"
       options
       

@@ -1,7 +1,9 @@
 ---
 layout: video
-published: no
+home: yes
 video_source: Apple_Factory.mp4
-video_home: http://assets.switzerlandwest.com/small-spots/Apple_Factory_small.mp4
+author: Jay Howard
+credits:
+  - Josh and Xander, Director
+  - Jay Howard, Producer
 ---
-Apple_Factory.mp4

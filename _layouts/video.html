@@ -8,9 +8,16 @@ layout: default
   </div>
   
   <div id="player_content">
-    
+    <div id="player_title">
+      <h2>
+        {{ page.title }}
+        {% if page.client %}
+          &ndash; {{ page.client }}
+        {% endif %}
+      </h2>
+    </div>
     <div id="player_video">
-      <video class="ne" src="{{ page | video_url }}" muted="true" volume="0"  controls width="720" height="480"></video>
+      <video class="ne" src="{{ page | video_url }}" muted="true" volume="0"  controls width="720" height="480" poster="{{ page | video_poster_image_url }}" type="video/mp4"></video>
     </div>
     
     <div id="player_sidebar">
@@ -19,12 +26,19 @@ layout: default
           <h3><img src="/images/cross_small_red_dark.png" alt='+'> Switzerland</h3>
           {% for author in page.author %}
           <a href="{{ author.url }}">
-            <img src="/images/creative/riswold.jpg" >
+            <img src="/images/creative/{{ author.author_id }}.jpg" >
             <strong>{{ author.name | linebreak_name }}</strong>
           </a>
           {% endfor %}
         </div>
-        <h3>{{ page.title }}</h3>
+        {% if page.credits %}
+        <h3>Credits</h3>
+        <ul>
+          {% for credit in page.credits %}
+          <li>{{ credit | comma_break }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
         {{ content }}
       </div>
     </div>

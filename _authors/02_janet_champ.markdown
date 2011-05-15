@@ -1,11 +1,7 @@
 ---
 layout: creative
 name: Janet Champ
-creative_id: janet_champ
-work:
-  - name: Awesome
-    file: path/to/file.mov
-    thumbnail: path/to/thumbnail.jpg
+credit: Creative Director/Writer
 ---
 
 ## Janet Champ

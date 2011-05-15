@@ -1,7 +1,10 @@
 ---
 layout: video
-published: no
+title: I-Beam
 video_source: BK_IBeam.mp4
-video_home: http://assets.switzerlandwest.com/small-spots/BK_IBeam_small.mp4
+author: Jay Howard
+home: yes
+credits:
+  - Kinka Usher, Director
+  - Jay Howard, Producer
 ---
-BK_IBeam.mp4

@@ -1,6 +1,10 @@
 ---
 layout: video
-published: no
 video_source: NikeBubkaMagicShoe.mp4
+title: Bubka
+home: yes
+author: Derek Ruddy
+credits:
+  - Joe Pytka, Director
+  - Derek Ruddy, Producer
 ---
-NikeBubkaMagicShoe.mp4

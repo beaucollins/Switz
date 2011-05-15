@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
+published: yes
 video_source: Nike_Bo.mp4
 ---
 Nike_Bo.mp4

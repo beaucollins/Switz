@@ -10,7 +10,13 @@ body_id: index
   </div>
   
   <script type="text/javascript" charset="utf-8">
-    swfobject.embedSWF('/images/SwitzerlandPlayer.swf', 'intro_video_player', 516, 516, '9.0.0', null, { url: '/videos.json' }, {menu:'false',wmode:'transparent'});
+    $('#intro_video_player').flash({
+      src:'/images/SwitzerlandPlayer.swf',
+      flashvars: { url: '/videos.json' },
+      width: 516,
+      height: 516,
+      wmode:'transparent'
+    })
   </script>
   
   <div class="article">

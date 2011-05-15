@@ -1,11 +1,7 @@
 ---
 layout: creative
 name: Charlotte Moore
-creative_id: charlotte_moore
-work:
-  - name: Awesome
-    file: path/to/file.mov
-    thumbnail: path/to/thumbnail.jpg
+credit: Creative Director/Art Director
 ---
 
 ## Charlotte Moore

@@ -1,6 +1,7 @@
 ---
 layout: creative
 name: Rick McQuiston
+credit: Creative Director/Art Direction
 ---
 ## Rick McQuiston
 

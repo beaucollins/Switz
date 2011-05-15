@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
-video: http://assets.switzerlandwest.com/ESPN1442 Sportscenter Second Wind-15-1997.mp4
+published: yes
+video_source: ESPN1442 Sportscenter Second Wind-15-1997.mp4
 ---
 ESPN1442 Sportscenter Second Wind-15-1997.mp4

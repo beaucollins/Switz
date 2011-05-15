@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
+published: yes
 video_source: JayHoward_Sm.mp4
 ---
 JayHoward_Sm.mp4

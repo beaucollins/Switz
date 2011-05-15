@@ -1,5 +1,10 @@
 ---
+title: Spike and Mike Opinions
 video_source: 2_Opinions-620x480.f4v
+home: yes
 layout: video
 author: Jim Riswold
+credits:
+  - Spike Lee, Director
+  - Jim Riswold, Creative Director/Writer
 ---

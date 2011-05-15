@@ -1,6 +1,7 @@
 ---
 layout: creative
-name: Jim Riswold    
+name: Jim Riswold
+credit: Creative Director/Writer
 ---
 
 ## Jim Riswold

@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
-video: http://assets.switzerlandwest.com/YNQC2046 Nike Bo Show George-60-1995.mp4
+published: yes
+video_source: YNQC2046 Nike Bo Show George-60-1995.mp4
 ---
 YNQC2046 Nike Bo Show George-60-1995.mp4

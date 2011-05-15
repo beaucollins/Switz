@@ -137,6 +137,9 @@ $.fn.storeHeight = function(){
         specialEasing: {
           opacity: 'linear',
           left: 'easeOutCubic'
+        },
+        complete:function(){
+          player.find('video')[0].play();
         }
       });
     player
@@ -158,6 +161,7 @@ $.fn.storeHeight = function(){
       });
       
     var outro = function(e){
+      player.find('video')[0].pause();
       player.animate({
         left: '+' + contentWidth + 'px',
         opacity: 0

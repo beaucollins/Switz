@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
+published: yes
 video_source: JobsIntelMW.mp4
 ---
 JobsIntelMW.mp4

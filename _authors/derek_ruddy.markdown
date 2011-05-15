@@ -2,6 +2,7 @@
 layout: creative
 name: Derek Ruddy
 hide: yes
+credit: Producer
 ---
 
 ## Derek Ruddy

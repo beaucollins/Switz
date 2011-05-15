@@ -1,5 +1,10 @@
 ---
+title: I Am Tiger Woods
+home: yes
 video_source: IAmTiger60.f4v
 author: Jim Riswold
 layout: video
+credits:
+  - Joe Pytka, Director
+  - Jim Riswold, Creative Director/Writer
 ---

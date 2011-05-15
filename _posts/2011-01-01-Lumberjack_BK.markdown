@@ -2,6 +2,9 @@
 layout: video
 video_source: Lumberjack_BK.mp4
 author: Jay Howard
-title: Burger Kind Lumberjack
+title: Lumberjack
 home: yes
+credits:
+  - Kinka Usher, Director
+  - Jay Howard, Producer
 ---

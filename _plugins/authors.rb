@@ -17,7 +17,7 @@ module Jekyll
       
       # now that we have author pages we need to cross reference posts with authors
       site.posts.each do |post|
-        $stderr.puts "#{post.id} not published: " and next unless post.published
+        $stderr.puts "#{post.id} not published: yes " and next unless post.published
         if post_authors = post.data['author']
           post_authors = [post_authors] unless post_authors.kind_of?(Array)
           post.data['author'] = post_authors.inject([]) do |author_data, author|

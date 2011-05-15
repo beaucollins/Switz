@@ -1,0 +1,32 @@
+---
+
+---
+<!DOCTYPE html>
+<head>
+  <title>All Spots | Switzerland</title>
+  <style type="text/css" media="screen">
+    h1 { margin:0; padding:20px; background:url('images/switzerland.png') no-repeat 10px center #F2F2F3; text-indent:-9999px; overflow:hidden; }
+    a img { border:0; }
+    body { margin:0; font: 75% Helvetica, arial, sans-serif; }
+    div { margin:0; border-top: 1px solid #FFF; border-bottom: 1px solid #EEE; clear:both; padding:10px; background:#FFF; }
+    div:after { content:"."; display:block; clear:both; visibility: hidden; height:0;}
+    div img { float: left; margin-right:10px; }
+    div p { margin:5px; padding:0; }
+  </style>
+  </head>
+  <html>
+  <body>
+    <h1>Switzerland</h1>
+{% for post in site.posts %}
+{% if post.video_source %}
+{% if post.author == empty or post.author == null %}
+<div>
+  <a href="{{ post.url }}"><img src="{{ post | video_media_path }}thumbs/thumb10.jpg" /></a>
+  <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  <p>{{ post.video_source }}</p>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+</body>
+</html>

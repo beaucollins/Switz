@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
-video: http://assets.switzerlandwest.com/YNQB5073 Nike Lisa Dunks-30-1997.mp4
+published: yes
+video_source: YNQB5073 Nike Lisa Dunks-30-1997.mp4
 ---
 YNQB5073 Nike Lisa Dunks-30-1997.mp4

@@ -1,6 +1,13 @@
 ---
+title: Heritage
 layout: video
-published: no
-video_source: Nike_Heritage.mp4
+home: yes
+video_source: Nike_Heritage.f4v
+author:
+  - Janet Champ
+  - Charlotte Moore
+credits:
+  - Dominic Sena, Director
+  - Janet Champ, Creative Director/Writer
+  - Charlotte Moore, Creative Director/Art Director
 ---
-Nike_Heritage.mp4

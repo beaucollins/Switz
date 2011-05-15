@@ -1,6 +1,11 @@
 ---
 layout: video
-published: no
 video_source: Coke_Circus640_480.mp4
+title: Circus
+client: Coca Cola
+home: yes
+author: Derek Ruddy
+credits:
+  - Tony Kaye, Director
+  - Derek Ruddy, Producer
 ---
-Coke_Circus640_480.mp4

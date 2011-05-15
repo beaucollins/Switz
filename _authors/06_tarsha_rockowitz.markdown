@@ -1,6 +1,7 @@
 ---
 layout: creative
 name: Tarsha Rockowitz
+credit: Designer
 ---
 
 ## Tarsha Rockowitz
@@ -15,4 +16,4 @@ Arts, Print and PDN. Seattle Show, One Show, and Art Director&rsquo;s Club award
 certain&nbsp;producer/consigliere.
 
 [painting]: http://www.varinia.com/
-[sewing, metalsmithing, screenprinting]: http://www.etsy.com/shop.php?user_id=7634520
+[sewing, metalsmithing, screenprinting]: http://www.theworldoft.com

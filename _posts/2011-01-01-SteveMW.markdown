@@ -1,6 +1,6 @@
 ---
 layout: video
-published: no
+published: yes
 video_source: SteveMW.mp4
 ---
 SteveMW.mp4

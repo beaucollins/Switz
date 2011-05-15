@@ -5,17 +5,17 @@ h1                                         { width:175px; height:30px; position:
 .loading h1                                { opacity:0; }
 .loaded h1                                 { opacity:1.0; -webkit-transition:opacity 1s 0.5s; }
 h1 a                                       { position:absolute; top:0; left:0; width:175px; height:30px; background:url(../images/switzerland.png); text-indent:-9999px; overflow:hidden; }
-h2                                         { font-size:12px; color:#D00; font-weight:normal; text-transform:uppercase; margin:10px 0 0 0; padding:0; }
+h2                                         { font-size:12px; color:#CB0033; font-weight:normal; text-transform:uppercase; margin:10px 0 0 0; padding:0; }
 p                                          { margin:0 0 10px 0; padding:0; }
 .header                                    { height:45px; font-size:11px; position:relative; z-index:10; }
 .header ol                                 { bottom:-50px; right:0; list-style:none; position:absolute; }
 .loading .header ol                        { opacity:0; right:-20px; }
 .loaded .header ol                         { opacity:1.0; -webkit-transition:opacity 1s 0.5s, right 0.5s 0.5s; }
-.header a span                             { font-weight:bold; color:#D00; }
+.header a span                             { font-weight:bold; color:#CB0033; }
 .header li                                 { float:left; margin-left:10px; }
 .header ol a                               { position:relative; display:block; color:#999; font-weight:normal; text-decoration:none; -webkit-transition:0.5s; -moz-transition:0.5s; }
 .header ol a:hover                         { top:3px; color:#333; -webkit-transition:0.1s; }
-.header .recent_work                       { position:absolute; right:0; top:18px; font-weight:bold; color:#D00; padding-left:18px; background:url(../images/cross_small_red.png) no-repeat left center; text-decoration:none; text-transform:uppercase; opacity:0.5; -webkit-transition:opacity 0.5s 0; }
+.header .recent_work                       { position:absolute; right:0; top:18px; font-weight:bold; color:#CB0033; padding-left:18px; background:url(../images/cross_small_red.png) no-repeat left center; text-decoration:none; text-transform:uppercase; opacity:0.5; -webkit-transition:opacity 0.5s 0; }
 .recent_work:hover                         { text-decoration:underline; opacity:1.0; }
 /*
 _Main Layout
@@ -47,7 +47,7 @@ video.sw                                   { top:320px; left:50px; }
 /*
 The Player Pane
 */
-#player_pane                               { -webkit-shadow:inset 0 2px 4px rgba(0, 0, 0, 1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(51, 51, 51, 1); border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; min-height:521px; }
+#player_pane                               { -webkit-shadow:inset 0 2px 4px rgba(0, 0, 0, 1.0); position:absolute; top:0; left:0; width:980px; height:400px; background:rgba(0,0,0, 1); border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; min-height:521px; color:#EEE; }
 #media_pane                                { position:absolute; top:40px; bottom:0; left:0; width:735px; }
 #player_back_button                        { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0, 0, 0, 1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
 #player_back_button:hover                  { color:#FFF; }
@@ -56,7 +56,7 @@ The Player Pane
 #creative_navigation li                    { float:left; margin-right:5px; }
 #creative_navigation a                     { display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; line-height:1; }
 #creative_navigation a:hover               { color:#CB0033; }
-#creative_navigation a img                 { display:block; margin-bottom:1px; }
+#creative_navigation a img                 { display:block; margin-bottom:5px; }
 #creative_navigation a strong              { font-weight:normal; visibility:hidden; }
 #creative_navigation a:hover strong        { visibility:visible; }
 #production #creative_navigation           { top:430px; left:460px; }
@@ -67,10 +67,11 @@ body#about #site_wrapper                   { padding: 0; }
 body#about .article                        { margin: 0 200px 0 375px; top:200px; position:relative; margin-bottom:200px; }
 
 body#work_with_us #fade                    { background:url(../images/cross_work_with_us.png) no-repeat center top #FFF; }
-#work_with_us_slides                       { position:absolute; top:185px; left:300px; width: 400px; border-top:1px solid #CCC; }
-.slide_controller                          { border-top:1px solid #DDD; padding-top:5px; margin-top:5px; }
+#work_with_us_slides                       { position:absolute; top:185px; left:300px; width: 400px; }
+.slide_controller                          { border-bottom:1px solid #DDD; }
 .slide_controller strong                   { color:#CB0033; font-weight:normal; text-transform:uppercase; }
-.slide_controller .links                   { position:absolute; top:-20px; right:0; }
+.slide_controller em                       { color:#333; position:absolute; top:20px; right:-15px;width:300px; font-style:normal; font-weight:bold; font-size:10px; text-align:right; }
+.slide_controller .links                   { position:absolute; top:0; right:15px; }
 .slide_controller .links a                 { font-weight:bold; color:#999; text-decoration:none; padding: 0 2px; }
 .slide_controller .links a:hover           { color:#000; }
 .slide_controller .links a.current         { color:#CB0033; }
@@ -93,9 +94,10 @@ body#contact .article                      { position:absolute; left:560px; top:
 #profile #site  .content                   { background:url(../images/cross_full_small.png) no-repeat center center #FFF; min-height: 500px; height:auto; }
 #bio_photo                                 { position:absolute; top:212px; left:715px; }
 #bio_photo img                             { height:76px; display:block; float:left; margin-right:2px;}
-#bio_thumbs                                { position:absolute; width:340px; top: 300px; left: 105px; height: 172px; overflow: hidden; }
-#bio_thumbs a.thumb                        { display:block; }
-#bio_thumbs a.thumb img                    { display:block; width:74px; height:60px; }
+.profile                                  { position: absolute; top:300px; left:105px;}
+.work_samples                                { width:340px; height: 172px; overflow: auto; }
+.work_samples a.thumb                        { display:block; }
+.work_samples a.thumb img                    { display:block; width:74px; height:60px; }
 #bio                                       { width:450px; left:550px; top:300px; position:absolute; }
 #more_bio                                  { border-top:1px solid #EEE; position:relative; left:660px; width:291px; padding-top:5px; margin-top: 5px; display:block; }
 #more_bio img                              { position:absolute; right:0; top:-1px; }
@@ -113,15 +115,16 @@ body#contact .article                      { position:absolute; left:560px; top:
 
 #player #player_pane                       { height:550px; position:relative; }
 #player #site .limiter                     { height:550px; }
-#player_sidebar                            { position:absolute; width:260px; top:0; right:0; bottom:0; overflow:hidden; }
+#player_sidebar                            { position:absolute; width:260px; top:0; right:0; bottom:0; overflow:hidden; font-size:11px; }
+#player_sidebar ul                         { margin:10px 0; padding:0 0 0 16px; }
+#player_sidebar p                          { margin:10px 0; }
 #player_sidebar_padding                    { padding:5px 15px; }
-#player_pane                               { color:#EEE; }
 
 #player_creative:after                     { content:'.'; clear:both; display:block; height:0; visibility:hidden; }
 #player_creative a                         { float:left; display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; margin:2px 10px 2px 2px; line-height:1; }
 #player_creative a:hover                   { color:#CB0033; }
-#player_creative a img                     { display:block; margin-bottom:1px; }
-#player_creative a strong                  { visibility:hidden; font-weight:normal; }
+#player_creative a img                     { display:block; margin-bottom:5px; }
+#player_creative a strong                  { visibility:visible; font-weight:normal; }
 #player_creative a:hover strong            { visibility:visible; }
 
 #player_sidebar_padding h3:first-child     { margin-top: 0; }
@@ -130,7 +133,15 @@ body#contact .article                      { position:absolute; left:560px; top:
 #player_video                              { position:absolute; top:40px; }
 #player_recent_work                        { position:absolute; top:0; left:-150px; }
 
+#player_title  { position:absolute; top:0; left:80px; width:580px; text-align:center;}
+
 /* Bio Pages  */
 
-.work_preview                              { position:relative; float:left; margin:5px; }
-.sample_video_player                       { position:absolute; top:0; left:0; }
+.work_preview                    { position:relative; float:left; margin:5px; }
+.sample_video_player             { position:absolute; top:0; left:0; }
+#work_page_prev_link,
+  #work_page_next_link           { color: #999; text-decoration:none; }
+#work_page_prev_link:hover,
+  #work_page_next_link:hover     { color: #CB0033; }
+#work_page_prev_link             { position: absolute; bottom:-20px; left: 10px; }
+#work_page_next_link             { position: absolute; bottom:-20px; right: 10px; }

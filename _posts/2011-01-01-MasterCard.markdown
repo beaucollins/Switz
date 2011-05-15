@@ -1,8 +1,12 @@
 ---
 layout: video
-published: no
+published: yes
+home: yes
 video_source: MasterCard.mp4
-title: MasterCard Baseball
+title: Baseball
 author: Derek Ruddy
+credits:
+  - Peggy Sirota, Director
+  - Derek Ruddy, Producer
 ---
 
