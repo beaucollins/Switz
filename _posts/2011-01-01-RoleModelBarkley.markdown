@@ -1,5 +1,6 @@
 ---
 title: Role Model
+client: Nike
 layout: video
 home: yes
 video_source: RoleModelBarkley.mp4
@@ -9,7 +10,7 @@ author:
   - Charlotte Moore
 credits:
   - Joe Pytka, Director
-  - Jim Riswold, Creative Director/Writer
-  - Charlotte Moore, Creative Director/Art Director
+  - Jim Riswold, C.D./Writer
+  - Charlotte Moore, C.D./Art Director
   - Derek Ruddy, Producer
 ---

@@ -81,7 +81,7 @@ module Jekyll
         end
 
       else
-        puts "Not processing #{input}"
+        # puts "Not processing #{input}"
       end
       
     end

@@ -8,7 +8,7 @@ author:
   - Janet Champ
 credits:
   - David Fincher, Director
-  - Rick McQuiston, Creative Director/Art Director
-  - Janet Champ, Creative Director/Writer
+  - Rick McQuiston, C.D./Art Director
+  - Janet Champ, C.D./Writer
 ---
 

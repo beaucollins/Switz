@@ -58,6 +58,12 @@ module VideoTags
     
   end
   
+  def with_title(string)
+    credit = string.split(',').collect(&:strip)
+    "<em>#{credit[1]}</em> #{credit[0]}"
+  end
+  
+  
   
 end
 

@@ -2,7 +2,7 @@
 layout: video
 video_source: Coke_Circus640_480.mp4
 title: Circus
-client: Coca Cola
+client: Coca-Cola
 home: yes
 author: Derek Ruddy
 credits:

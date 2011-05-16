@@ -10,6 +10,11 @@ body_id: profile
                     <a class="thumb" href="{{ post.url }}" data-sample="{{ post | video_thumbnail_url }}"><img src="{{ post | video_thumbnail_image_url }}" alt="{{ post.title }}"></a>
                   </div>
                   {% endif %}
+                  {% if post.images %}
+                  <div class="work_preview">
+                    <a class="thumb" href="{{ post.url }}"><img src="{{ post.thumb }}" alt="{{ post.title }}"></a>
+                  </div>                  
+                  {% endif %}
                 {% endfor %}
               </div><!-- bio thumbs-->
           </div>

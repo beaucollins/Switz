@@ -1,4 +1,6 @@
 ---
+title: Shortstops
+client: Nike
 layout: video
 home: yes
 author: Derek Ruddy

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: Reveal
+client: Blackberry
 video_source: BlackBerryReveal_GENERIC_Web.mp4
 home: yes
 author: Jay Howard

@@ -5,5 +5,5 @@ layout: video
 home: yes
 credits:
   - Stacy Wall, Director
-  - Glenn Rockowitz, Creative Director/Writer
+  - Glenn Rockowitz, C.D./Writer
 ---

@@ -6,6 +6,6 @@ video_source: Bud_Bad_Day.f4v
 author: Todd Grant
 credits:
   - Tom Routson, Director
-  - Todd Grant, Creative Director/Art Director
+  - Todd Grant, C.D./Art Director
 client: Budweiser
 ---

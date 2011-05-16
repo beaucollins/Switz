@@ -1,6 +1,7 @@
 ---
 layout: video
-title: Apple Airpot
+title: Airpot
+client: Apple
 video_source: Apple_Airport.mp4
 home: yes
 author: Jay Howard

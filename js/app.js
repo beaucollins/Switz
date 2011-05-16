@@ -124,6 +124,30 @@ $.fn.storeHeight = function(){
     player = $.setupPlayer( { parent: $('.content').parent() });
     player.find('#player_holder').load(url, function(){
       $.initializePlayer(player);
+      
+      var image = $('#player_image');
+      if (image.length > 0) {
+        var title = $('#player_title');
+        var images = $('#player_image img').hide().css({cursor:'pointer'});
+
+        title.text("1 of " + images.length );
+
+        if (images.length == 1) title.hide();
+        var current = images.first().show();
+        images.click(function(e){
+          var next = current.next('img');
+          current.hide();
+          if (next.length > 0) {
+            current = next;
+          }else{
+            current = images.first();
+          }
+          current.show();
+          title.text((current.index() + 1) + " of " + images.length );
+
+        });
+      };
+      
     });
     var contentWidth = $('.content').width();
     $('.content')
@@ -139,7 +163,10 @@ $.fn.storeHeight = function(){
           left: 'easeOutCubic'
         },
         complete:function(){
-          player.find('video')[0].play();
+          var video = player.find('video');
+          if (video[0]) { video[0].play() };
+          
+          
         }
       });
     player
@@ -161,7 +188,8 @@ $.fn.storeHeight = function(){
       });
       
     var outro = function(e){
-      player.find('video')[0].pause();
+      var video = player.find('video')[0];
+      if (video) { video.pause(); }
       player.animate({
         left: '+' + contentWidth + 'px',
         opacity: 0
@@ -212,7 +240,7 @@ $(document).ready(function(){
       $img.attr('src', $this.data('original'));
     });
   
-  $('#intro_videos video, #bio_thumbs a.thumb, a.recent_work').click(function(e){
+  $('#intro_videos video, #bio_thumbs a.thumb, a.recent_work, div.work_preview a').click(function(e){
     e.preventDefault();
     $.slidePlayer($(this).attr('href'));
   });

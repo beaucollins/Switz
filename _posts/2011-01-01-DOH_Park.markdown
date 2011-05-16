@@ -2,7 +2,11 @@
 layout: video
 video_source: DOH_Park.mp4
 title: Park
+client: Washington Department of Health
 author: Jay Howard
+credits:
+  - Chel White, Director
+  - Jay Howard, Producer
 home: yes
 ---
 

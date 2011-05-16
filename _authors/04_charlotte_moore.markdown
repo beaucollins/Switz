@@ -1,7 +1,7 @@
 ---
 layout: creative
 name: Charlotte Moore
-credit: Creative Director/Art Director
+credit: C.D./Art Director
 ---
 
 ## Charlotte Moore

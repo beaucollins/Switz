@@ -1,7 +1,7 @@
 ---
 layout: creative
 name: Janet Champ
-credit: Creative Director/Writer
+credit: C.D./Writer
 ---
 
 ## Janet Champ

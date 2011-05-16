@@ -1,6 +1,7 @@
 ---
 layout: video
-title: Mini Amusement Park
+title: Amusement Park
+client: Mini
 video_source: MiniCooper_AmusementPark.mp4
 home: yes
 author: Jay Howard

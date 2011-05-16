@@ -1,6 +1,7 @@
 ---
 layout: video
 title: Mini Market Musical
+client: Washington's Lottery
 home: yes
 video_source: Mini-Mart Musical Agency.mp4
 author:
@@ -8,6 +9,6 @@ author:
   - Todd Grant
 credits:
   - Patrick Daughters, Director
-  - Todd Grant, Creative Director/Art Director
+  - Todd Grant, C.D./Art Director
   - Jay Howard, Producer
 ---

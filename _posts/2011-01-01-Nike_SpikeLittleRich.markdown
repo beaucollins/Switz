@@ -1,4 +1,6 @@
 ---
+title: Little Richard
+client: Nike
 layout: video
 home: yes
 video_source: Nike_SpikeLittleRich.mp4
@@ -7,6 +9,6 @@ author:
   - Jim Riswold
 credits:
   - Spike Lee, Director
-  - Jim Riswold, Creative Director/Writer
+  - Jim Riswold, C.D./Writer
   - Derek Ruddy, Producer
 ---

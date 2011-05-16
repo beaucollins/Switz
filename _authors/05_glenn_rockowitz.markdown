@@ -1,7 +1,7 @@
 ---
 layout: creative
 name: Glenn Rockowitz
-credit: Creative Director/Writer
+credit: C.D./Writer
 ---
 
 ## Glenn Rockowitz

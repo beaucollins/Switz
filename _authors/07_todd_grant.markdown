@@ -1,7 +1,7 @@
 ---
 layout: creative
 name: Todd Grant
-credit: Creative Director/Art Director
+credit: C.D./Art Director
 ---
 
 ## Todd Grant

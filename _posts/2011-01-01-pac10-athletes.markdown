@@ -2,6 +2,7 @@
 layout: video
 video_source: athletes.mp4
 title: Athletes
+client: PAC-10
 home: yes
 author:
   - Janet Champ
@@ -10,8 +11,8 @@ author:
   - Derek Ruddy
 credits:
   - Loaded Pictures, Director
-  - Janet Champ, Creative Director/Writer
-  - Rick McQuiston, Creative Director/Art Director
+  - Janet Champ, C.D./Writer
+  - Rick McQuiston, C.D./Art Director
   - Jay Howard, Producer
   - Derek Ruddy, Producer
 ---

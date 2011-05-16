@@ -3,27 +3,28 @@ layout: default
 ---
 
 <div id="player_pane">
-  <div id="player_back_button">
-    Back {{ page.class }}
-  </div>
   
   <div id="player_content">
-    <div id="player_title">
-      <h2>
-        {{ page.title }}
-        {% if page.client %}
-          &ndash; {{ page.client }}
-        {% endif %}
-      </h2>
-    </div>
     <div id="player_video">
       <video class="ne" src="{{ page | video_url }}" muted="true" volume="0"  controls width="720" height="480" poster="{{ page | video_poster_image_url }}" type="video/mp4"></video>
     </div>
     
     <div id="player_sidebar">
       <div id="player_sidebar_padding">
+        <ul id="spot-meta">
+          <li><em>Spot</em> {{ page.title }}</li>
+          {% if page.client %}
+            <li><em>Client</em> {{ page.client }}</li>
+          {% endif %}
+          
+          {% if page.credits %}
+            {% for credit in page.credits %}
+            <li>{{ credit | with_title }}</li>
+            {% endfor %}
+          {% endif %}
+        </ul>
         <div id="player_creative">
-          <h3><img src="/images/cross_small_red_dark.png" alt='+'> Switzerland</h3>
+          <h3>Switzerland</h3>
           {% for author in page.author %}
           <a href="{{ author.url }}">
             <img src="/images/creative/{{ author.author_id }}.jpg" >
@@ -31,14 +32,6 @@ layout: default
           </a>
           {% endfor %}
         </div>
-        {% if page.credits %}
-        <h3>Credits</h3>
-        <ul>
-          {% for credit in page.credits %}
-          <li>{{ credit | comma_break }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
         {{ content }}
       </div>
     </div>
@@ -49,4 +42,3 @@ layout: default
 <script type="text/javascript" charset="utf-8">
   $.initializePlayer($('#player_pane'));
 </script>
-{{ content }}
