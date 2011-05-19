@@ -1,7 +1,6 @@
 ---
 layout: creative
 name: Jay Howard
-hide: yes
 credit: Producer
 ---
 
@@ -15,3 +14,5 @@ broadcast on the Academy Awards. Molded by years immersed in the Chiat/Day cultu
 has produced work for some fairly well&ndash;known brands including Microsoft, Intel,
 Hewlett-Packard, MINI Cooper, Apple, Nike, Nintendo, and Starbucks. Thinks great advertising
 campaigns are a thing of beauty. Believes there should be more beauty in the&nbsp;world.
+
+Contact: [jay@switzerlandwest.com](mailto:jay@switzerlandwest.com)

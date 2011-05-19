@@ -15,3 +15,5 @@ Barkley. Executive Producer for 6 years at Publicis, heading up a 25-member prod
 helping to create memorable branding for T-Mobile, Citibank and Washington&rsquo;s Lottery. Believes
 awards don&rsquo;t really matter, yet continues to use the many he&rsquo;s received over the years
 as decorative ornamentation anyway. Thinks the work really does come&nbsp;first.
+
+Contact: [derek@switzerlandwest.com](mailto:derek@switzerlandwest.com)

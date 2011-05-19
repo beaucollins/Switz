@@ -224,21 +224,21 @@ $.fn.storeHeight = function(){
 $(document).ready(function(){
   
   
-  $('#creative_navigation a, .creative_link')
-    .mouseover(function(e){
-      var $this = $(this);
-      var $img = $this.find('img');
-      if (!$this.data('original')) {
-        $this.data('original', $img.attr('src'));
-      };
-      var original = $this.data('original');
-      $img.attr('src', original.replace(/([\w]+).jpg/, '$1_over.jpg'))
-    })
-    .mouseout(function(){
-      var $this = $(this);
-      var $img = $this.find('img');
-      $img.attr('src', $this.data('original'));
-    });
+  // $('#creative_navigation a, .creative_link')
+  //   .mouseover(function(e){
+  //     var $this = $(this);
+  //     var $img = $this.find('img');
+  //     if (!$this.data('original')) {
+  //       $this.data('original', $img.attr('src'));
+  //     };
+  //     var original = $this.data('original');
+  //     $img.attr('src', original.replace(/([\w]+).jpg/, '$1_over.jpg'))
+  //   })
+  //   .mouseout(function(){
+  //     var $this = $(this);
+  //     var $img = $this.find('img');
+  //     $img.attr('src', $this.data('original'));
+  //   });
   
   $('#intro_videos video, #bio_thumbs a.thumb, a.recent_work, div.work_preview a').click(function(e){
     e.preventDefault();

@@ -52,7 +52,7 @@ The Player Pane
 #player_back_button                        { text-decoration:none; display:block; color:#666; font-weight:bold; text-shadow:0 -1px 0 rgba(0, 0, 0, 1.0); position:absolute; top:7px; left:5px; border:15px solid #000; border-width:0 12px; padding:5px; -webkit-border-image:url(../images/player_back.png) 0 6 0 12 / 0 6px 0 12px stretch; }
 #player_back_button:hover                  { color:#FFF; }
 
-#creative_navigation                       { position:absolute; top:370px; left:200px; list-style:none; margin:0; padding:0; }
+#creative_navigation                       { position:absolute; top:360px; left:190px; list-style:none; margin:0; padding:0; }
 #creative_navigation li                    { float:left; margin-right:5px; }
 #creative_navigation a                     { display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; line-height:1; }
 #creative_navigation a:hover               { color:#CB0033; }
@@ -121,8 +121,8 @@ body#contact .article                      { position:absolute; left:560px; top:
 
 #player_creative { padding-bottom:10px;}
 #player_creative:after                     { content:'.'; clear:both; display:block; height:0; visibility:hidden; }
-#player_creative a                         { float:left; display:block; font-size:10px; color:#000; text-decoration:none; text-transform:uppercase; margin:2px 0px 2px 12px; line-height:1; opacity:0.8; }
-#player_creative a:hover                   { color:#CB0033; opacity:1; }
+#player_creative a                         { float:left; display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; margin:2px 0px 2px 12px; line-height:1; opacity:0.8; }
+#player_creative a:hover                   { opacity:1; }
 #player_creative a img                     { display:block; margin-bottom:5px; }
 #player_creative a strong                  { visibility:visible; font-weight:normal; }
 #player_creative a:hover strong            { visibility:visible; }

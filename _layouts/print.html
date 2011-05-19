@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+<div id="player_pane">
+  <div id="player_content">
+    <div id="player_title">
+      x of x
+    </div>
+    <div id="player_image">
+      {% for image in page.images %}
+      <img src="{{ image }}" />
+      {% endfor %}
+    </div>
+    
+    <div id="player_sidebar">
+      <div id="player_sidebar_padding">
+        <ul id="spot-meta">
+          <li><em>Title</em> {{ page.title }}</li>
+          {% if page.client %}
+            <li><em>Client</em> {{ page.client }}</li>
+          {% endif %}
+          
+          {% if page.credits %}
+            {% for credit in page.credits %}
+            <li>{{ credit | with_title }}</li>
+            {% endfor %}
+          {% endif %}
+        </ul>
+        <div id="player_creative">
+          <h3>Switzerland</h3>
+          {% for author in page.author %}
+          <a href="{{ author.url }}">
+            <img src="/images/creative/{{ author.author_id }}.jpg" >
+            <strong>{{ author.name | linebreak_name }}</strong>
+          </a>
+          {% endfor %}
+        </div>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  (function(){
+    var title = $('#player_title');
+    var images = $('#player_image img').hide().css({cursor:'pointer'});
+    
+    title.text("1 of " + images.length );
+    
+    if (images.length == 1) title.hide();
+    var current = images.first().show();
+    images.click(function(e){
+      var next = current.next('img');
+      current.hide();
+      if (next.length > 0) {
+        current = next;
+      }else{
+        current = images.first();
+      }
+      current.show();
+      title.text((current.index() + 1) + " of " + images.length );
+      
+    });
+    
+    
+  })();
+</script>
