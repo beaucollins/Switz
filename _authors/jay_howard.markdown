@@ -2,6 +2,7 @@
 layout: creative
 name: Jay Howard
 credit: Producer
+hide: yes
 ---
 
 ## Jay Howard

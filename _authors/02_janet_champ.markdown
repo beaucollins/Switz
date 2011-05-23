@@ -12,8 +12,8 @@ copywriter spending 14 years at Wieden + Kennedy. Nike, Coke, Microsoft, Pepe Je
 became awards for One Club, Addy&rsquo;s, Cannes, MoMA, D&amp;AD, Smithsonian, the Surgeon General,
 The Women&rsquo;s Law Review ad infinitum. [Co-creator] of the iconic Nike Women&rsquo;s Fitness
 campaign for seven years. Named Copywriter of the Year by Adweek. Sued by the Beatles. [Author] of
-two books. Believes the written word can change the world, if it&amp;rsquo;s the
-right&amp;nbsp;word.
+two books. Believes the written word can change the world, if it&rsquo;s the
+right&nbsp;word.
 
 [Co-creator]: http://champandmoore.com/
 [Author]: http://ripethemovement.blogspot.com/

@@ -54,8 +54,8 @@ The Player Pane
 
 #creative_navigation                       { position:absolute; top:360px; left:190px; list-style:none; margin:0; padding:0; }
 #creative_navigation li                    { float:left; margin-right:5px; }
-#creative_navigation a                     { display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; line-height:1; }
-#creative_navigation a:hover               { color:#CB0033; }
+#creative_navigation a                     { display:block; font-size:10px; color:#999; text-decoration:none; text-transform:uppercase; line-height:1; opacity:0.5; }
+#creative_navigation a:hover               { color:#CB0033; opacity:1; }
 #creative_navigation a img                 { display:block; margin-bottom:5px; }
 #creative_navigation a strong              { font-weight:normal; visibility:hidden; }
 #creative_navigation a:hover strong        { visibility:visible; }
@@ -99,8 +99,10 @@ body#contact .article                      { position:absolute; left:560px; top:
 .work_samples a.thumb                        { display:block; }
 .work_samples a.thumb img                    { display:block; width:74px; height:60px; }
 #bio                                       { width:450px; left:550px; top:300px; position:absolute; }
+#bio h2                                     { margin:0; }
 #more_bio                                  { border-top:1px solid #EEE; position:relative; left:660px; width:291px; padding-top:5px; margin-top: 5px; display:block; }
 #more_bio img                              { position:absolute; right:0; top:-1px; }
+#bio a                                      { color: #CB0033;}
 
 #contact_list dl dt,
   #contact_list dl dd                      { display: inline; padding: 0; margin: 0; }
