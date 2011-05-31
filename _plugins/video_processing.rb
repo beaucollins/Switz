@@ -72,7 +72,7 @@ module Jekyll
         
         if File.extname(input) != 'mp4'
           puts "Make full size"
-          spawn("ffmpeg -y -loglevel quiet -i '#{input}' -vcodec libx264 -b 500k #{scale.fit_options('640x480', :none)} -crf 22 -vpre slow -acodec libfaac -ab 96k -threads 0 '#{File.join(output_directory,"#{basename}.mp4")}'", :out => "/dev/null", :err => '/dev/null')
+          spawn("ffmpeg -y -loglevel quiet -i '#{input}' -vcodec libx264 -b 500k #{scale.fit_options('640x480', :width)} -crf 22 -vpre slow -acodec libfaac -ab 96k -threads 0 '#{File.join(output_directory,"#{basename}.mp4")}'", :out => "/dev/null", :err => '/dev/null')
           wait
         else
           puts "Extname: #{File.extname(input)}"
