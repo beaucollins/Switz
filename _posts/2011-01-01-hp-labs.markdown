@@ -1,6 +1,7 @@
 ---
+layout: video
 title: HP Labs
-client: Hewlett Packard
+client: Hewlett-Packard
 author: Jay Howard
 video_source: HP_TV_HPLabs_1920x1080.mov
 credits:

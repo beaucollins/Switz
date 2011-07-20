@@ -16,4 +16,4 @@ has produced work for some fairly well&ndash;known brands including Microsoft, I
 Hewlett-Packard, MINI Cooper, Apple, Nike, Nintendo, and Starbucks. Thinks great advertising
 campaigns are a thing of beauty. Believes there should be more beauty in the&nbsp;world.
 
-Contact: [jay@switzerlandwest.com](mailto:jay@switzerlandwest.com)
+Contact: [jay@switzerlandinc.com](mailto:jay@switzerlandinc.com)

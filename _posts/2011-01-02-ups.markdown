@@ -1,7 +1,7 @@
 ---
 layout: video
 title: UPS
-client: Hewlett Packard
+client: Hewlett-Packard
 author: Jay Howard
 video_source: HP_TV_UPS_1920x1080.mov
 credits:
