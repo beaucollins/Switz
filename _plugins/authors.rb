@@ -23,7 +23,7 @@ module Jekyll
           post.data['author'] = post_authors.inject([]) do |author_data, author|
             author_id = author.downcase.strip.gsub(/[\s]+/,'-')
             if authors.key? author_id
-              authors[author_id].posts << post
+              authors[author_id].posts.unshift post
               author_data << authors[author_id] 
             end
             author_data
