@@ -3,7 +3,7 @@ layout: print
 title: Rebrand launch materials
 client: KEXP
 author: Tarsha Rockowitz
-thumb: http://assets.switzerlandwest.com/images/tarsha_rockowitz/kexp_rebrand-small.jpg
+thumb: http://switzerlandllc.com/assets/images/tarsha_rockowitz/kexp_rebrand-small.jpg
 images: 
-- http://assets.switzerlandwest.com/images/tarsha_rockowitz/kexp_rebrand.jpg
+- http://switzerlandllc.com/assets/images/tarsha_rockowitz/kexp_rebrand.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 layout: video
-video_source: Nike_BarkleyofSeville.mp4
+video_source: http://switzerlandllc.com/assets/Nike_BarkleyofSeville/Nike_BarkleyofSeville.mp4
 author: Derek Ruddy
 title: Barkley of Seville
 client: Nike

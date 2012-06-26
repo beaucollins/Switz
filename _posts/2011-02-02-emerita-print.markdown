@@ -2,7 +2,7 @@
 layout: print
 title: Emerita
 author: Janet Champ
-thumb: http://assets.switzerlandwest.com/images/janet_champ/emerita-small.jpg
+thumb: http://switzerlandllc.com/assets/images/janet_champ/emerita-small.jpg
 images: 
-- http://assets.switzerlandwest.com/images/janet_champ/emerita.jpg
+- http://switzerlandllc.com/assets/images/janet_champ/emerita.jpg
 ---

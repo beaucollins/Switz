@@ -1,9 +1,9 @@
 ---
-title: Role Model
+title: Role Model 
 client: Nike
 layout: video
 home: yes
-video_source: RoleModelBarkley.mp4
+video_source: http://switzerlandllc.com/assets/videos/RoleModelBarkley/RoleModelBarkley.mp4
 author:
   - Jim Riswold
   - Derek Ruddy

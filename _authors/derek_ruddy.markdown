@@ -16,4 +16,4 @@ helping to create memorable branding for T-Mobile, Citibank and Washington&rsquo
 awards don&rsquo;t really matter, yet continues to use the many he&rsquo;s received over the years
 as decorative ornamentation anyway. Thinks the work really does come&nbsp;first.
 
-Contact: [derek@switzerlandinc.com](mailto:derek@switzerlandinc.com)
+Contact: [derek@switzerlandllc.com](mailto:derek@switzerlandllc.com)

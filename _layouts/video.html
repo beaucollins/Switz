@@ -5,9 +5,24 @@ layout: default
 <div id="player_pane">
   
   <div id="player_content">
-    <div id="player_video">
-      <video class="ne" src="{{ page | video_url }}" muted="true" volume="0"  controls width="720" height="480" poster="{{ page | video_poster_image_url }}" type="video/mp4"></video>
+
+    <div id="player_video" >
+
+	
+		<div id="VideoDiv">
+<video controls class="ne" muted="true" volume="0"  width="720" height="480" autoplay="autoplay" >
+	<source src="{{ page | video_url }}"  type="video/mp4" poster="{{ page | video_poster_image_url }}">
+		
+		<source src="{{ page | video_url_webm }}"  type="video/webm" poster="{{ page | video_poster_image_url }}">	
+	
+</video>
+
+
+
+		</div>
+	
     </div>
+	
     
     <div id="player_sidebar">
       <div id="player_sidebar_padding">
@@ -38,6 +53,7 @@ layout: default
   </div>
   
 </div>
+
 
 <script type="text/javascript" charset="utf-8">
   $.initializePlayer($('#player_pane'));

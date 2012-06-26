@@ -14,6 +14,11 @@
     <script type="text/javascript" charset="utf-8" src="/js/jquery-work.js"></script>
     <script type="text/javascript" charset="utf-8" src="/js/app.js"></script>
 
+
+
+	
+
+
   </head>
   <body id="{{ page.body_id }}">
     <script type="text/javascript" charset="utf-8">
@@ -22,6 +27,7 @@
     <div id="wrapper">
       <div class="header">
         <div class="limiter">
+		  <div id="recent_work"><a href="../recent.html"><img src="/images/view_our_recent_work.jpg" border="0"/></a></div>
           <h1><a href="/">switzerland</a></h1>
           <!-- <a class="recent_work" href="/recent_work.html">View Our Recent Work</a> -->
           <ol>
@@ -30,7 +36,8 @@
             <li><a href="/production.html"><span>03.</span> production</a></li>
             <li><a href="/creative.html"><span>04.</span> creative</a></li>
             <li><a href="/business-affairs.html"><span>05.</span> business affairs</a></li>
-            <li><a href="/contact.html"><span>06.</span> contact</a></li>
+			<li><a href="https://switzerlandllc.sharefile.com/" target="_blank"><span>06.</span> client access</a></li>
+            <li><a href="/contact.html"><span>07.</span> contact</a></li>
           </ol>
         </div>
       </div>
@@ -70,6 +77,15 @@
       })();
 
     </script>
+
+	<script type="text/javascript">
+			$(document).ready(function(){
+			    $('#VideoDiv').flash({
+			        src: '{{ page | video_url }}'
+			    });
+			});
+
+			</script>
   </body>
 </html>
 

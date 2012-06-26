@@ -24,7 +24,7 @@ require 'yaml'
     thumb_file = File.basename(thumb)
     thumb_ext = File.extname(thumb)
     thumb_base = File.basename(thumb, thumb_ext)
-    `wget http://switzerlandwest.com#{thumb}` unless File.exists?('converted/' +thumb_file)
+    `wget http://switzerlandllc.com#{thumb}` unless File.exists?('converted/' +thumb_file)
     `convert #{thumb_file} -resize 74x60^ -gravity center -extent 74x60  converted/#{thumb_file}`
     
     title = main.first['title']
@@ -38,8 +38,8 @@ require 'yaml'
       ext = File.extname(file)
       base = File.basename(file, ext)
       puts file
-      work << ('http://assets.switzerlandwest.com/images/' + name + '/' + file)
-      `wget http://switzerlandwest.com#{img}` if !File.exists?('converted/'+file)
+      work << ('http://switzerlandllc.com/assets/images/' + name + '/' + file)
+      `wget http://switzerlandllc.com#{img}` if !File.exists?('converted/'+file)
       `identify #{file}`
       `convert #{file} -background '#000000' -resize 640x480 -gravity center -extent 640x480   converted/#{file}`
     end
@@ -48,7 +48,7 @@ require 'yaml'
       'title' => parts.first.capitalize,
       'client' => parts[1].capitalize,
       'author' => name.split("_").collect(&:capitalize).join(" "),
-      'thumb' => "http://assets.switzerlandwest.com/images/#{name}/#{thumb_file}"
+      'thumb' => "http://switzerlandllc.com/assets/images/#{name}/#{thumb_file}"
     }
     frontmatter.merge! 'images' => work if work && !work.empty?
     File.open(post, 'w') do |f|

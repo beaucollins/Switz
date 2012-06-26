@@ -3,7 +3,7 @@ layout: print
 title: Global Planning Magazine
 client: Publicis Worldwide
 author: Tarsha Rockowitz
-thumb: http://assets.switzerlandwest.com/images/tarsha_rockowitz/blender-small.jpg
+thumb: http://switzerlandllc.com/assets/images/tarsha_rockowitz/blender-small.jpg
 images: 
-- http://assets.switzerlandwest.com/images/tarsha_rockowitz/blender.jpg
+- http://switzerlandllc.com/assets/images/tarsha_rockowitz/blender.jpg
 ---

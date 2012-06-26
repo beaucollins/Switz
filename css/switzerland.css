@@ -30,6 +30,8 @@ _Main Layout
 #fade                                      { padding:40px 0; min-height:480px; }
 .limiter                                   { width:980px; position:relative; margin:0 auto; }
 #site_wrapper .limiter                     { min-height:500px; }
+#recent_work							   {float:right; margin-top:13px;}
+
 /* Home Page */
 #index #the_cross                          { position:relative; width:515px; height:516px; background:url(../images/cross_home.png) no-repeat; }
 /*
@@ -149,3 +151,8 @@ body#contact .article                      { position:absolute; left:560px; top:
   #work_page_next_link:hover     { color: #CB0033; }
 #work_page_prev_link             { position: absolute; bottom:-20px; left: 10px; }
 #work_page_next_link             { position: absolute; bottom:-20px; right: 10px; }
+
+
+/* RECENT PAGE */
+#top_cross_overlay{position:absolute; top:312px; left:313px; width:177px; height:125px; z-index:9999; background-color:#fff;}
+#index .recent{bottom:0px; left:560px;}

@@ -3,7 +3,7 @@ layout: print
 title: Butterflies
 client: Hewlett-Packard
 author: Todd Grant
-thumb: http://assets.switzerlandwest.com/images/todd_grant/HP_butterflies_small.jpg
+thumb: http://switzerlandllc.com/assets/images/todd_grant/HP_butterflies_small.jpg
 images: 
-- http://assets.switzerlandwest.com/images/todd_grant/HP_butterflies.jpg
+- http://switzerlandllc.com/assets/images/todd_grant/HP_butterflies.jpg
 ---

@@ -9,7 +9,15 @@ module VideoTags
     if source = page['video_source']
       extension = File.extname(source)
       basename = File.basename(source, extension)
-      "http://assets.switzerlandwest.com/videos/#{basename}/#{basename}.mp4"
+      "http://switzerlandllc.com/assets/videos/#{basename}/#{basename}.mp4"
+    end
+  end
+  
+  def video_url_webm(page)
+    if source = page['video_source']
+      extension = File.extname(source)
+      basename = File.basename(source, extension)
+      "http://switzerlandllc.com/assets/videos/#{basename}/#{basename}.webm"
     end
   end
   
@@ -17,7 +25,7 @@ module VideoTags
     if source = page['video_source']
       extension = File.extname(source)
       basename = File.basename(source, extension)
-      "http://assets.switzerlandwest.com/videos/#{basename}/"
+      "http://switzerlandllc.com/assets/videos/#{basename}/"
     end
   end
   
@@ -25,7 +33,7 @@ module VideoTags
     if source = page['video_source']
       extension = File.extname(source)
       basename = File.basename(source, extension)
-      "http://assets.switzerlandwest.com/videos/#{basename}/thumb.jpg"
+      "http://switzerlandllc.com/assets/videos/#{basename}/thumb.jpg"
     end
   end
   
@@ -33,7 +41,7 @@ module VideoTags
     if source = page['video_source']
       extension = File.extname(source)
       basename = File.basename(source, extension)
-      "http://assets.switzerlandwest.com/videos/#{basename}/poster.jpg"
+      "http://switzerlandllc.com/assets/videos/#{basename}/poster.jpg"
     end
   end
   
@@ -41,7 +49,7 @@ module VideoTags
     if source = page['video_source']
       extension = File.extname(source)
       basename = File.basename(source, extension)
-      "http://assets.switzerlandwest.com/videos/#{basename}/#{basename}_thumb.mp4"
+      "http://switzerlandllc.com/assets/videos/#{basename}/#{basename}_thumb.mp4"
     end
   end
 
@@ -49,7 +57,7 @@ module VideoTags
     if source = page['video_source']
       extension = File.extname(source)
       basename = File.basename(source, extension)
-      "http://assets.switzerlandwest.com/videos/#{basename}/#{basename}_small.mp4"
+      "http://switzerlandllc.com/assets/videos/#{basename}/#{basename}_small.mp4"
     end
   end
   
